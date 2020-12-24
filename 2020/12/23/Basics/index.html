@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of  the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-23T01:54:21.000Z">
-<meta property="article:modified_time" content="2020-12-24T10:57:25.551Z">
+<meta property="article:modified_time" content="2020-12-24T11:08:06.071Z">
 <meta property="article:author" content="Yuxuan">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -118,6 +118,16 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
@@ -181,8 +191,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-24 18:57:25" itemprop="dateModified" datetime="2020-12-24T18:57:25+08:00">2020-12-24</time>
+                <time title="Modified: 2020-12-24 19:08:06" itemprop="dateModified" datetime="2020-12-24T19:08:06+08:00">2020-12-24</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/math-tool/" itemprop="url" rel="index"><span itemprop="name">math tool</span></a>
+                </span>
+            </span>
 
           
 
@@ -197,71 +216,49 @@
       
         <p>A collection of theorems in <em>Logic, Number, Sequence</em> and <em>Function</em> based on the first part of  the course VV186 in UM-SJTU JI.</p>
 <a id="more"></a>
-<h1>Logics.</h1>
-<p><strong>de Morgan rules</strong><br>
-$$<br>
-\neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\<br>
-\neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)<br>
-$$</p>
-<p><strong>Contraposition</strong><br>
-$$<br>
-(A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)<br>
-$$<br>
-​	e.g.: contraposition of quantifiers:<br>
-$$<br>
-\underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))<br>
-$$</p>
-<p><strong>Russel Antinomy.</strong>	The predicate $P(x):x\notin x$ does not define a set $A={x:P(x)}$.</p>
+<h1 id="Logics"><a href="#Logics" class="headerlink" title="Logics."></a>Logics.</h1><p><strong>de Morgan rules</strong></p>
+<script type="math/tex; mode=display">
+\neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\\
+\neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)</script><p><strong>Contraposition</strong></p>
+<script type="math/tex; mode=display">
+(A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)</script><p>​    e.g.: contraposition of quantifiers:</p>
+<script type="math/tex; mode=display">
+\underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))</script><p><strong>Russel Antinomy.</strong>    The predicate $P(x):x\notin x$ does not define a set $A=\{x:P(x)\}$.</p>
 <p>Proof:</p>
 <ol>
-<li>
-<p>Assume $A\in A$. Then, according to $P(x)$, $A\notin A$.</p>
+<li><p>Assume $A\in A$. Then, according to $P(x)$, $A\notin A$.</p>
 </li>
-<li>
-<p>Assume $A\notin A$. Then, according to $\neg P(x)$, $A\in A$.</p>
+<li><p>Assume $A\notin A$. Then, according to $\neg P(x)$, $A\in A$.</p>
 </li>
 </ol>
-<h1>Numbers.</h1>
-<p><strong>Mathematical Induction.</strong> works by establishing two statements:</p>
+<h1 id="Numbers"><a href="#Numbers" class="headerlink" title="Numbers."></a>Numbers.</h1><p><strong>Mathematical Induction.</strong> works by establishing two statements:</p>
 <ol>
 <li>$A(n_0)$ is true,</li>
 <li>$A(n+1)$ is true whenever $A(n)$ is true for $n\geq n_0$, i.e., $\underset{n \in \mathbb{N} \atop n \geq n_{0}}{\forall}(A(n) \Rightarrow A(n+1))$</li>
 </ol>
-<p><strong>Binomial Formula.</strong><br>
-$$<br>
-(a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}<br>
-n \<br>
-k<br>
-\end{array}\right) a^{k} b^{n-k}<br>
-$$</p>
-<p><strong>Triangle Inequality.</strong> For all real numbers $a,b\in \mathbb{R}$, we have<br>
-$$<br>
-||a|-|b|| \leq |a+b|\leq |a|+|b|<br>
-$$</p>
-<p><strong>The Square Root Problem.</strong> There exist no number $a\in \mathbb{Q}$ such that $a^2=2$.</p>
+<p><strong>Binomial Formula.</strong> </p>
+<script type="math/tex; mode=display">
+(a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
+n \\
+k
+\end{array}\right) a^{k} b^{n-k}</script><p><strong>Triangle Inequality.</strong> For all real numbers $a,b\in \mathbb{R}$, we have</p>
+<script type="math/tex; mode=display">
+||a|-|b|| \leq |a+b|\leq |a|+|b|</script><p><strong>The Square Root Problem.</strong> There exist no number $a\in \mathbb{Q}$ such that $a^2=2$.</p>
 <p>Proof.</p>
 <p>Assume $a=\frac{q}{p}$ such that $a^2=(\frac{q}{p})^2=2$, where $p,q\in \mathbb{N}$. Further assume that $p$ and $q$ does not have common divisor greater than 1.</p>
-<p>Then,<br>
-$$<br>
-q^2=2p^2<br>
-$$<br>
-This relation means that $q$ is even. Thus, we can make the substitute $q=2k$.</p>
-<p>Then,<br>
-$$<br>
-2k^2=p^2<br>
-$$<br>
-This relation means that $p$ is even. Hence, $p$ and $q$ have at least a divisor 2, which is contradict with our assumption.</p>
-<p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree $n$: $p(x)=a_0+a_1x+\cdots+a_nx^n$, there exist numbers $\lambda_1,…,\lambda_n\in\mathbb{C}$ such that<br>
-$$<br>
-p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)<br>
-$$</p>
-<h1>Sequences.</h1>
-<p><strong>General Results</strong>:</p>
+<p>Then, </p>
+<script type="math/tex; mode=display">
+q^2=2p^2</script><p>This relation means that $q$ is even. Thus, we can make the substitute $q=2k$.</p>
+<p>Then,</p>
+<script type="math/tex; mode=display">
+2k^2=p^2</script><p>This relation means that $p$ is even. Hence, $p$ and $q$ have at least a divisor 2, which is contradict with our assumption.</p>
+<p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree $n$: $p(x)=a_0+a_1x+\cdots+a_nx^n$, there exist numbers $\lambda_1,…,\lambda_n\in\mathbb{C}$ such that</p>
+<script type="math/tex; mode=display">
+p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)</script><h1 id="Sequences"><a href="#Sequences" class="headerlink" title="Sequences."></a>Sequences.</h1><p><strong>General Results</strong>:</p>
 <ol>
 <li>A convergent sequence is bounded.</li>
 <li>A convergent sequence has precisely one limit.</li>
-<li>If $\lim a_n=a,\lim b_n=b$, then
-<ol>
+<li>If $\lim a_n=a,\lim b_n=b$, then<ol>
 <li>$\lim(a_n+b_n)=a+b$</li>
 <li>$\lim(a_n\cdot b_n)=a\cdot b$</li>
 <li>$\lim(a_n/b_n)=a/b$, if $b\ne0$</li>
@@ -269,56 +266,37 @@ $$</p>
 </li>
 </ol>
 <p><strong>Squeeze Theorem.</strong> Let $(a_n),(b_n),(c_n)$ be real sequences with $a_n&lt;c_n&lt;b_n$ for sufficiently large $n$. Suppose that $\lim a_n=\lim b_n=a$. Then, $(c_n)$ converges and $\lim c_n=a$.</p>
-<p><strong>Bernoulli’s Inequality.</strong> For $x&gt;-1$, and $n\in\mathbb{N}$,<br>
-$$<br>
-(1+x)^n&gt;nx<br>
-$$</p>
-<p><strong>Monotonic Subsequence.</strong> Every sequence has a monotonic subsequence.</p>
+<p><strong>Bernoulli’s Inequality.</strong> For $x&gt;-1$, and $n\in\mathbb{N}$,</p>
+<script type="math/tex; mode=display">
+(1+x)^n>nx</script><p><strong>Monotonic Subsequence.</strong> Every sequence has a monotonic subsequence.</p>
 <p><strong>Theorem of Bolzano-Weierstraß.</strong> Every bounded real sequence has an accumulation point.</p>
-<p><strong>Definition of Cauchy Sequence.</strong> A sequence $(a_n)$ in a metric space $(M,\varrho)$ is called a Cauchy sequence if<br>
-$$<br>
-\underset{\varepsilon&gt;0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n&gt;N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)&lt;\varepsilon<br>
-$$<br>
-<strong>Properties of Cauchy Sequence.</strong></p>
+<p><strong>Definition of Cauchy Sequence.</strong> A sequence $(a_n)$ in a metric space $(M,\varrho)$ is called a Cauchy sequence if</p>
+<script type="math/tex; mode=display">
+\underset{\varepsilon>0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n>N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)<\varepsilon</script><p><strong>Properties of Cauchy Sequence.</strong> </p>
 <ol>
-<li>
-<p>Every Cauchy sequence in $\mathbb{R}$ with the metric</p>
-<p>$$<br>
-\varrho:\mathbb{R}\times\mathbb{R}\rightarrow\mathbb{R},\ \ \ \ \ \varrho(x,y)=|x-y|<br>
-$$</p>
-<p>is convergent.</p>
+<li><p>Every Cauchy sequence in $\mathbb{R}$ with the metric </p>
+<script type="math/tex; mode=display">
+\varrho:\mathbb{R}\times\mathbb{R}\rightarrow\mathbb{R},\ \ \ \ \ \varrho(x,y)=|x-y|</script><p>is convergent.</p>
 </li>
-<li>
-<p>Every convergent sequence is Cauchy sequence.</p>
+<li><p>Every convergent sequence is Cauchy sequence.</p>
 </li>
 </ol>
-<h1>Functions.</h1>
-<p><strong>The Big-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is not significantly larger than $|\phi(x)|$, where $x$ is near $x_0$ )<br>
-$$<br>
-f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0<br>
-$$<br>
-if and only if<br>
-$$<br>
-\underset{C&gt;0}{\exists}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|<br>
-$$</p>
-<p><strong>The Little-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is much smaller than $|\phi(x)|$, where $x$ is near $x_0$ )<br>
-$$<br>
-f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0<br>
-$$<br>
-if and only if<br>
-$$<br>
-\underset{C&gt;0}{\forall}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega\backslash{x_0}}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| &lt; C|\phi(x)|<br>
-$$</p>
-<p><strong>A Useful Lemma from Continuity.</strong> Let $\Omega\subset\mathbb{R}$ be some set, $f:\Omega\rightarrow\mathbb{R}$ a function that is continuous at some point $x_0\in\Omega$ and assume that $f(x_0)&gt;0$. Then there exists a $\delta&gt;0$ such that $f(x)&gt;0$ for all $x\in(x_0-\delta,x+\delta)\cap\Omega$.</p>
+<h1 id="Functions"><a href="#Functions" class="headerlink" title="Functions."></a>Functions.</h1><p><strong>The Big-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is not significantly larger than $|\phi(x)|$, where $x$ is near $x_0$ )</p>
+<script type="math/tex; mode=display">
+f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p>
+<script type="math/tex; mode=display">
+\underset{C>0}{\exists}\ \underset{\varepsilon>0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|<\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|</script><p><strong>The Little-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is much smaller than $|\phi(x)|$, where $x$ is near $x_0$ )</p>
+<script type="math/tex; mode=display">
+f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p>
+<script type="math/tex; mode=display">
+\underset{C>0}{\forall}\ \underset{\varepsilon>0}{\exists}\ \underset{x\in\Omega\backslash\{x_0\}}{\forall}\ \left|x-x_{0}\right|<\varepsilon \quad \Rightarrow \quad|f(x)| < C|\phi(x)|</script><p><strong>A Useful Lemma from Continuity.</strong> Let $\Omega\subset\mathbb{R}$ be some set, $f:\Omega\rightarrow\mathbb{R}$ a function that is continuous at some point $x_0\in\Omega$ and assume that $f(x_0)&gt;0$. Then there exists a $\delta&gt;0$ such that $f(x)&gt;0$ for all $x\in(x_0-\delta,x+\delta)\cap\Omega$. </p>
 <p><strong>Zero Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function with $f(a)&lt;0&lt;f(b)$. There exists some $x\in[a,b]$ such that $f(x)=0$.</p>
-<p><strong>Bolzano Intermediate Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then for $y\in[\min{f(a),f(b)},\max{f(a),f(b)}]$, there exists some $x\in[a,b]$ such that $f(x)=y$.</p>
+<p><strong>Bolzano Intermediate Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then for $y\in[\min\{f(a),f(b)\},\max\{f(a),f(b)\}]$, there exists some $x\in[a,b]$ such that $f(x)=y$.</p>
 <p><strong>Boundedness of Continuous Function.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then there exists a $y\in[a,b]$ such that $f(x)&lt;f(y)$ for all $x\in[a,b]$.</p>
-<p><strong>Bijectivity.</strong> Let $a,b\in\mathbb{R}\cup{-\infty}\cup{\infty}$ such that $a&lt;b$. Let $f:[a,b]\rightarrow\mathbb{R}$ be strictly increasing and continuous. Then<br>
-$$<br>
-\alpha:=\lim\limits_{x\searrow a}\geq -\infty\<br>
-\beta:=\lim\limits_{x\nearrow b}\leq \infty\<br>
-$$<br>
-exist and $f$ is bijective.</p>
+<p><strong>Bijectivity.</strong> Let $a,b\in\mathbb{R}\cup\{-\infty\}\cup\{\infty\}$ such that $a&lt;b$. Let $f:[a,b]\rightarrow\mathbb{R}$ be strictly increasing and continuous. Then</p>
+<script type="math/tex; mode=display">
+\alpha:=\lim\limits_{x\searrow a}\geq -\infty\\
+\beta:=\lim\limits_{x\nearrow b}\leq \infty\\</script><p>exist and $f$ is bijective.</p>
 <p><strong>Monotony.</strong> Let $I\subset\mathbb{R}$ be an interval and $\widetilde{\Omega}\subset\mathbb{R}$ a set. If $f:I\rightarrow\widetilde{\Omega}$ is continuous and bijective, then $f$ is strictly monotonic on $I$.</p>
 
     </div>
@@ -400,7 +378,7 @@ exist and $f$ is bijective.</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Logics.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">Numbers.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">Sequences.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">Functions.</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Logics"><span class="nav-number">1.</span> <span class="nav-text">Logics.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Numbers"><span class="nav-number">2.</span> <span class="nav-text">Numbers.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sequences"><span class="nav-number">3.</span> <span class="nav-text">Sequences.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Functions"><span class="nav-number">4.</span> <span class="nav-text">Functions.</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -420,9 +398,17 @@ exist and $f$ is bijective.</p>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
