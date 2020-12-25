@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of  the course VV186 in UM-SJTU JI.">
+  <meta name="description" content="A collection of theorems in Differential Calculus in one variable based on the second part of  the course VV186 in UM-SJTU JI.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Basics">
-<meta property="og:url" content="http://example.com/2020/12/23/Basics/index.html">
+<meta property="og:title" content="Differential Calculus">
+<meta property="og:url" content="http://example.com/2020/12/25/Differential-Calculus/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of  the course VV186 in UM-SJTU JI.">
+<meta property="og:description" content="A collection of theorems in Differential Calculus in one variable based on the second part of  the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-23T01:54:21.000Z">
-<meta property="article:modified_time" content="2020-12-24T11:08:06.071Z">
+<meta property="article:published_time" content="2020-12-25T02:16:41.000Z">
+<meta property="article:modified_time" content="2020-12-25T13:20:01.024Z">
 <meta property="article:author" content="Yuxuan">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/12/23/Basics/">
+<link rel="canonical" href="http://example.com/2020/12/25/Differential-Calculus/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Basics | Hexo</title>
+  <title>Differential Calculus | Hexo</title>
   
 
 
@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/23/Basics/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/25/Differential-Calculus/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -174,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Basics
+          Differential Calculus
         </h1>
 
         <div class="post-meta">
@@ -183,16 +183,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-12-23 09:54:21" itemprop="dateCreated datePublished" datetime="2020-12-23T09:54:21+08:00">2020-12-23</time>
+              <time title="Created: 2020-12-25 10:16:41 / Modified: 21:20:01" itemprop="dateCreated datePublished" datetime="2020-12-25T10:16:41+08:00">2020-12-25</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-24 19:08:06" itemprop="dateModified" datetime="2020-12-24T19:08:06+08:00">2020-12-24</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -214,91 +208,113 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>A collection of theorems in <em>Logic, Number, Sequence</em> and <em>Function</em> based on the first part of  the course VV186 in UM-SJTU JI.</p>
+        <p>A collection of theorems in <em>Differential Calculus in one variable</em> based on the second part of  the course VV186 in UM-SJTU JI.</p>
 <a id="more"></a>
-<h1 id="Logics"><a href="#Logics" class="headerlink" title="Logics."></a>Logics.</h1><p><strong>de Morgan rules</strong></p>
+<h1 id="Real-Functions"><a href="#Real-Functions" class="headerlink" title="Real Functions."></a>Real Functions.</h1><p><strong>The Inverse Function Theorem.</strong> Let $I$ be an open interval and let function $f:I\rightarrow\mathbb{R}$ be differentiable and strictly monotonic. Then the inverse map $f^{-1}=g:f(I)\rightarrow I$ exists and differentiable at all points $y\in f(I)$ for which $f’(g(y))\neq 0$. Furthermore,</p>
 <script type="math/tex; mode=display">
-\neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\\
-\neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)</script><p><strong>Contraposition</strong></p>
+g'(y)=\frac{1}{f'(g(y))}</script><p><strong>Rolle’s Theorem.</strong> Let $f$ be a real function and $a&lt;b\in\mathbb{R}$ such that $[a,b]\in\text{dom}f$. Assume $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$ and that $f(a)=f(b)$. Then there exists a number $x\in(a,b)$ such that $f(x)=0$.</p>
+<p><strong>Mean Value Theorem.</strong> Let $f$ be a real function and $a&lt;b\in\mathbb{R}$ such that $[a,b]\in\text{dom}f$. Assume $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$. Then there exists a number $x\in(a,b)$ such that </p>
 <script type="math/tex; mode=display">
-(A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)</script><p>​    e.g.: contraposition of quantifiers:</p>
+f'(x)=\frac{f(b)-f(a)}{b-a}</script><p><strong>Cauchy Mean Value Theorem.</strong> Let $f,g$ be real functions and $[a,b]\subset\text{dom}f\ \cap\text{dom}g$. If $f,g$ are continuous on $[a,b]$ and differentiable on $(a,b)$, then there exists a number $x\in(a,b)$ such that</p>
 <script type="math/tex; mode=display">
-\underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))</script><p><strong>Russel Antinomy.</strong>    The predicate $P(x):x\notin x$ does not define a set $A=\{x:P(x)\}$.</p>
-<p>Proof:</p>
+(f(b)-f(a))g'(x)=(g(b)-g(a))f'(x)</script><p><strong>L’Hôpital’s Rule.</strong> Let $f$ and $g$ be real functions and $b\in\overline{\operatorname{dom} f \cap \operatorname{dom} g}$ with</p>
+<script type="math/tex; mode=display">
+\lim\limits_{x\searrow b}f(x)=0\ \ \ \ \text{and}\ \ \ \ \lim\limits_{x\searrow b}g(x)=0</script><p>Suppose that there exists a $\delta&gt;0$ such that $f$ and $g$ are defined and differentiable on interval $(b,b+\delta)$ and $g’(x)\neq0$ for all $x\in(b,b+\delta)$. Suppose further that the limit $\lim\limits_{x\searrow b}f’(x)/g(x):=L$ exists. Then</p>
+<script type="math/tex; mode=display">
+\lim\limits_{x\searrow b}\frac{f(x)}{g(x)}=L</script><p><strong>The Continuousness of Sequence of Functions.</strong> Let $[a,b]\subset\mathbb{R}$ be closed interval. Let $(f_n)$ be a sequence of continuous functions defined on $[a,b]$ such that $(f_n)$ converges to some $f(x)\in\mathbb{R}$ as $n\rightarrow\infty$ for every $x\in[a,b]$. If the sequence $(f_n)$ convergences uniformly to the thereby defined function $f:[a,b]\rightarrow\mathbb{R}$, then $f$ is continuous.</p>
+<p><strong>The Completeness of $C([a,b])$.</strong> Let $[a,b]\subset\mathbb{R}$ be a closed interval and $C([a,b])$ be the vector space of continuous functions on $[a,b]$, endowed with the metric</p>
+<script type="math/tex; mode=display">
+\varrho(f,g)=\|f-g\|=\sup\limits_{x\in[a,b]}|f(x)-g(x)|</script><p>Then every Cauchy sequence in this metric space is convergent.</p>
+<h1 id="Series"><a href="#Series" class="headerlink" title="Series."></a>Series.</h1><p><strong>Cauchy Criterion.</strong> Let $\sum a_k$ be a series in a complete vector space $(V,|\cdot|)$. Then</p>
+<script type="math/tex; mode=display">
+\begin{equation}\begin{split} 
+\sum a_k\ \text{converges} & \Leftrightarrow (s_n)_{n\in\mathbb{N}}\ \text{converges, where}\ s_n=\sum\limits_{k=0}^na_k\\
+& \Leftrightarrow (s_n)\ \text{is Cauchy}\\
+& \Leftrightarrow \underset{\varepsilon>0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m>n>N}{\forall}\ \| s_{m}-s_{n} \|<\varepsilon\\
+& \Leftrightarrow \underset{\varepsilon>0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m>n>N}{\forall}\ \|\sum\limits_{k=n+1}^{m}a_k\|<\varepsilon\ \ \cdots\cdots(*)
+\end{split}\end{equation}</script><p>From property $(*)$ we know that</p>
 <ol>
-<li><p>Assume $A\in A$. Then, according to $P(x)$, $A\notin A$.</p>
+<li><p>If series $\sum a_k$ converges, then the sequence $a_k\rightarrow 0$, as $k\rightarrow\infty$.</p>
 </li>
-<li><p>Assume $A\notin A$. Then, according to $\neg P(x)$, $A\in A$.</p>
+<li><p>If series $\sum a_k$ converges, then the sequence $(A_n)$ given by</p>
+<script type="math/tex; mode=display">
+A_n=\sum\limits_{k=n}^\infty a_k</script><p>converges to 0, as $n\rightarrow\infty$.</p>
 </li>
 </ol>
-<h1 id="Numbers"><a href="#Numbers" class="headerlink" title="Numbers."></a>Numbers.</h1><p><strong>Mathematical Induction.</strong> works by establishing two statements:</p>
+<p><strong>Approximation of <em>p</em>-Series.</strong> For $p&gt;0$,</p>
+<script type="math/tex; mode=display">
+\frac{2^p-1}{2^p}+\frac{2}{2^p}s_n(p)<s_{2n}(p)<1+\frac{2}{2^p}s_n(p)</script><p><strong>Convergence of <em>p</em>-Series.</strong> The <em>p</em>-series $\sum\limits_{k=0}^{\infty}\frac{1}{k^p}$ converges when $p&gt;1$ and diverges when $p\leq1$.</p>
+<p><strong>Triangle Inequality of Series.</strong> Let $(V,|\cdot|)$ be a complete normed vector space and $\sum a_k$ an absolutely convergent series. Then</p>
+<script type="math/tex; mode=display">
+\|\sum\limits_{k=0}^\infty a_k\|\leq\sum\limits_{k=0}^\infty\|a_k\|</script><p><strong>Comparison Test.</strong> Let $(a_k)$ and $(b_k)$ be real-valued sequences with $0\leq a_k\leq b_k$ for sufficiently large $k$. Then</p>
+<script type="math/tex; mode=display">
+\sum b_k\ \text{converges}\ \ \Rightarrow\ \ \sum a_k\ \text{converges}</script><p><strong>Weierstraß M-Test.</strong> Let $\Omega\subset\mathbb{R}$ and $(f_k)$ be a sequence of functions defined on $\Omega$, $f_k:\Omega\rightarrow\mathbb{C}$, satisfying</p>
+<script type="math/tex; mode=display">
+\sup\limits_{x\in\Omega}|f_k(x)|\leq M_k,\ \ \ \ k\in\mathbb{N}</script><p>for a sequence of real numbers $(M_k)$. Suppose that $(M_k)$ converges. Then the limit</p>
+<script type="math/tex; mode=display">
+f(x):=\sum\limits_{k=0}^\infty f_k(x)</script><p>exists for every $x\in\Omega$.</p>
+<p>Furthermore, the sequence $(F_n)$ of the partial sums</p>
+<script type="math/tex; mode=display">
+F_n=\sum\limits_{k=0}^n f_k(x)</script><p>converges to limits $f(x)$</p>
+<p><strong>Root Test.</strong> Let $\sum a_k$ be a series of non-negative real numbers.</p>
 <ol>
-<li>$A(n_0)$ is true,</li>
-<li>$A(n+1)$ is true whenever $A(n)$ is true for $n\geq n_0$, i.e., $\underset{n \in \mathbb{N} \atop n \geq n_{0}}{\forall}(A(n) \Rightarrow A(n+1))$</li>
+<li><p>Suppose that there exists a $q&lt;1$ such that </p>
+<script type="math/tex; mode=display">
+\sqrt[k]{a_k}\leq q,\ \ \ \text{for sufficiently large }k</script><p>Then $\sum a_k$ converges.</p>
+</li>
+<li><p>Suppose that</p>
+<script type="math/tex; mode=display">
+\sqrt[k]{a_k}\leq 1,\ \ \ \text{for sufficiently large }k</script><p>Then $\sum a_k$ diverges.</p>
+</li>
 </ol>
-<p><strong>Binomial Formula.</strong> </p>
+<p><strong>Root Test Using Limits.</strong> Let $\sum a_k$ be a series of non-negative real numbers. Then</p>
 <script type="math/tex; mode=display">
-(a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
-n \\
-k
-\end{array}\right) a^{k} b^{n-k}</script><p><strong>Triangle Inequality.</strong> For all real numbers $a,b\in \mathbb{R}$, we have</p>
-<script type="math/tex; mode=display">
-||a|-|b|| \leq |a+b|\leq |a|+|b|</script><p><strong>The Square Root Problem.</strong> There exist no number $a\in \mathbb{Q}$ such that $a^2=2$.</p>
-<p>Proof.</p>
-<p>Assume $a=\frac{q}{p}$ such that $a^2=(\frac{q}{p})^2=2$, where $p,q\in \mathbb{N}$. Further assume that $p$ and $q$ does not have common divisor greater than 1.</p>
-<p>Then, </p>
-<script type="math/tex; mode=display">
-q^2=2p^2</script><p>This relation means that $q$ is even. Thus, we can make the substitute $q=2k$.</p>
-<p>Then,</p>
-<script type="math/tex; mode=display">
-2k^2=p^2</script><p>This relation means that $p$ is even. Hence, $p$ and $q$ have at least a divisor 2, which is contradict with our assumption.</p>
-<p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree $n$: $p(x)=a_0+a_1x+\cdots+a_nx^n$, there exist numbers $\lambda_1,…,\lambda_n\in\mathbb{C}$ such that</p>
-<script type="math/tex; mode=display">
-p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)</script><h1 id="Sequences"><a href="#Sequences" class="headerlink" title="Sequences."></a>Sequences.</h1><p><strong>General Results</strong>:</p>
+\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}<1\Rightarrow \sum a_k\ \text{converges}\\
+\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}>1\Rightarrow \sum a_k\ \text{diverges}\\</script><p><strong>Ratio Test.</strong> Let  be a series of positive real numbers.</p>
 <ol>
-<li>A convergent sequence is bounded.</li>
-<li>A convergent sequence has precisely one limit.</li>
-<li>If $\lim a_n=a,\lim b_n=b$, then<ol>
-<li>$\lim(a_n+b_n)=a+b$</li>
-<li>$\lim(a_n\cdot b_n)=a\cdot b$</li>
-<li>$\lim(a_n/b_n)=a/b$, if $b\ne0$</li>
-</ol>
+<li><p>Suppose that there exists a $q&lt;1$ such that </p>
+<script type="math/tex; mode=display">
+\frac{a_{k+1}}{a_k}\leq q,\ \ \ \text{for sufficiently large }k</script><p>Then $\sum a_k$ converges.</p>
+</li>
+<li><p>Suppose that</p>
+<script type="math/tex; mode=display">
+\frac{a_{k+1}}{a_k}\geq 1,\ \ \ \text{for sufficiently large }k</script><p>Then $\sum a_k$ diverges.</p>
 </li>
 </ol>
-<p><strong>Squeeze Theorem.</strong> Let $(a_n),(b_n),(c_n)$ be real sequences with $a_n&lt;c_n&lt;b_n$ for sufficiently large $n$. Suppose that $\lim a_n=\lim b_n=a$. Then, $(c_n)$ converges and $\lim c_n=a$.</p>
-<p><strong>Bernoulli’s Inequality.</strong> For $x&gt;-1$, and $n\in\mathbb{N}$,</p>
+<p><strong>Ratio Test Using Limits.</strong> Let $\sum a_k$ be a series of positive real numbers. Then</p>
 <script type="math/tex; mode=display">
-(1+x)^n>nx</script><p><strong>Monotonic Subsequence.</strong> Every sequence has a monotonic subsequence.</p>
-<p><strong>Theorem of Bolzano-Weierstraß.</strong> Every bounded real sequence has an accumulation point.</p>
-<p><strong>Definition of Cauchy Sequence.</strong> A sequence $(a_n)$ in a metric space $(M,\varrho)$ is called a Cauchy sequence if</p>
+\varlimsup_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}<1\Rightarrow \sum a_k\ \text{converges}\\
+\varliminf_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}>1\Rightarrow \sum a_k\ \text{diverges}\\</script><p><strong>Ratio Comparison Test.</strong> Let $(a_k)$ and $(b_k)$ be sequences of strictly positive real numbers. Suppose $\sum b_k$ converges. If</p>
 <script type="math/tex; mode=display">
-\underset{\varepsilon>0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n>N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)<\varepsilon</script><p><strong>Properties of Cauchy Sequence.</strong> </p>
+\frac{a_{k+1}}{a_k}\leq\frac{b_{k+1}}{b_k},\ \ \ \text{for sufficiently large }k</script><p>then $\sum a_k$ converges.</p>
+<p><strong>Raabe’s Test.</strong> Let $\sum a_k$ be a series of positive real numbers. Suppose that there exists a $p&gt;1$ such that</p>
+<script type="math/tex; mode=display">
+\frac{a_{k+1}}{a_k}\leq 1-\frac{p}{k},\ \ \ \ \text{for sufficiently large }k</script><p>Then $\sum a_k$ converges.</p>
+<p><strong>Rearrangement of Absolutely Convergent Series.</strong> Assume that $\sum a_k$ is an absolutely convergent series in a complete normed  vector space. If the summands of the series are rearranged, the new series $\sum b_j,\ b_j=a_{k(j)},\ k: \mathbb{N}\rightarrow \mathbb{N}$ bijective, converges absolutely with the same sum as $\sum a_k$.</p>
+<p><strong>Rearrangement of Conditionally Convergent Series.</strong> Let $\sum a_k$ be a conditionally convergent series of real numbers. Then for  any $\alpha \in \mathbb{R}$ there exists a rearrangement $b_j = a_{k(j)},\ k:\mathbb{N}\rightarrow\mathbb{N}$ bijective, of $\sum a_k$ such that $\sum b_j=\alpha$.</p>
+<p><strong>Leibniz Theorem.</strong> Let $\sum a_k$ be a complex series whose partial sum are bounded and need not converge. Let $(a_k)$ be a decreasing convergent sequence with limit zero, $a_k\searrow 0$. Then the series</p>
+<script type="math/tex; mode=display">
+\sum \alpha_ka_k,\ \ \text{converges}</script><p><strong>Summation by Parts (Abel transformation).</strong> For $m&gt;n$,</p>
+<script type="math/tex; mode=display">
+\sum_{k=n+1}^{m} a_{k}\left(b_{k}-b_{k-1}\right)=a_{m+1} b_{m}-a_{n+1} b_{n}-\sum_{k=n+1}^{m}\left(a_{k+1}-a_{k}\right) b_{k}</script><p><strong>Convergence of Cauchy Product.</strong> Let $\sum a_k$ and $\sum b_k$ be absolutely convergent series. Then the Cauchy product $\sum c_k$ given by</p>
+<script type="math/tex; mode=display">
+c_k:=\sum\limits_{i+j=k}a_ib_j</script><p>converges absolutely and $\sum c_k=(\sum a_k)(\sum b_k)$</p>
+<p><strong>Radius of Convergence of Power Series.</strong> Let $\sum a_kz^k$ be a complex power series. Then there exists a unique number $\varrho\in[0,\infty)\cup{\infty}$ such that</p>
 <ol>
-<li><p>Every Cauchy sequence in $\mathbb{R}$ with the metric </p>
-<script type="math/tex; mode=display">
-\varrho:\mathbb{R}\times\mathbb{R}\rightarrow\mathbb{R},\ \ \ \ \ \varrho(x,y)=|x-y|</script><p>is convergent.</p>
-</li>
-<li><p>Every convergent sequence is Cauchy sequence.</p>
-</li>
+<li>$\sum a_kz^k$ is absolutely convergent at $z_0\in\mathbb{C}$ if $|z_0|&lt;\varrho$.</li>
+<li>$\sum a_kz^k$ diverges at $z_0\in\mathbb{C}$ if $|z_0|&gt;\varrho$.</li>
 </ol>
-<h1 id="Functions"><a href="#Functions" class="headerlink" title="Functions."></a>Functions.</h1><p><strong>The Big-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is not significantly larger than $|\phi(x)|$, where $x$ is near $x_0$ )</p>
+<p><strong>Hadamard’s Formula.</strong> The radius of convergence is given by</p>
 <script type="math/tex; mode=display">
-f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p>
+\varrho=
+\begin{cases}
+\frac{1}{\overline{\lim } \sqrt[k]{\left|a_{k}\right|}}, & 0<\varlimsup\limits_{k \rightarrow \infty} \sqrt[k]{\left|a_{k}\right|}<\infty \newline
+0, & \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=\infty \newline
+\infty, & \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=0
+\end{cases}</script><p><strong>Convergence of the Differentiation of Power Series.</strong> Let $\sum a_kz^k$ be a complex power series with radius of convergence $\varrho$. Then the series $\sum ka_kz^{k-1}$ has the same radius of convergence $\varrho$.</p>
+<p><strong>The Most Beautiful Theorem.</strong></p>
 <script type="math/tex; mode=display">
-\underset{C>0}{\exists}\ \underset{\varepsilon>0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|<\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|</script><p><strong>The Little-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is much smaller than $|\phi(x)|$, where $x$ is near $x_0$ )</p>
-<script type="math/tex; mode=display">
-f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p>
-<script type="math/tex; mode=display">
-\underset{C>0}{\forall}\ \underset{\varepsilon>0}{\exists}\ \underset{x\in\Omega\backslash\{x_0\}}{\forall}\ \left|x-x_{0}\right|<\varepsilon \quad \Rightarrow \quad|f(x)| < C|\phi(x)|</script><p><strong>A Useful Lemma from Continuity.</strong> Let $\Omega\subset\mathbb{R}$ be some set, $f:\Omega\rightarrow\mathbb{R}$ a function that is continuous at some point $x_0\in\Omega$ and assume that $f(x_0)&gt;0$. Then there exists a $\delta&gt;0$ such that $f(x)&gt;0$ for all $x\in(x_0-\delta,x+\delta)\cap\Omega$. </p>
-<p><strong>Zero Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function with $f(a)&lt;0&lt;f(b)$. There exists some $x\in[a,b]$ such that $f(x)=0$.</p>
-<p><strong>Bolzano Intermediate Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then for $y\in[\min\{f(a),f(b)\},\max\{f(a),f(b)\}]$, there exists some $x\in[a,b]$ such that $f(x)=y$.</p>
-<p><strong>Boundedness of Continuous Function.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then there exists a $y\in[a,b]$ such that $f(x)&lt;f(y)$ for all $x\in[a,b]$.</p>
-<p><strong>Bijectivity.</strong> Let $a,b\in\mathbb{R}\cup\{-\infty\}\cup\{\infty\}$ such that $a&lt;b$. Let $f:[a,b]\rightarrow\mathbb{R}$ be strictly increasing and continuous. Then</p>
-<script type="math/tex; mode=display">
-\alpha:=\lim\limits_{x\searrow a}\geq -\infty\\
-\beta:=\lim\limits_{x\nearrow b}\leq \infty\\</script><p>exist and $f$ is bijective.</p>
-<p><strong>Monotony.</strong> Let $I\subset\mathbb{R}$ be an interval and $\widetilde{\Omega}\subset\mathbb{R}$ a set. If $f:I\rightarrow\widetilde{\Omega}$ is continuous and bijective, then $f$ is strictly monotonic on $I$.</p>
-
+e^{i\pi}+1=0</script>
     </div>
 
     
@@ -315,11 +331,11 @@ f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/12/25/Differential-Calculus/" rel="next" title="Differential Calculus">
-      Differential Calculus <i class="fa fa-chevron-right"></i>
+    <a href="/2020/12/23/Basics/" rel="prev" title="Basics">
+      <i class="fa fa-chevron-left"></i> Basics
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -378,7 +394,7 @@ f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0</script><p>if and only if</p
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Logics"><span class="nav-number">1.</span> <span class="nav-text">Logics.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Numbers"><span class="nav-number">2.</span> <span class="nav-text">Numbers.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sequences"><span class="nav-number">3.</span> <span class="nav-text">Sequences.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Functions"><span class="nav-number">4.</span> <span class="nav-text">Functions.</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Real-Functions"><span class="nav-number">1.</span> <span class="nav-text">Real Functions.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Series"><span class="nav-number">2.</span> <span class="nav-text">Series.</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
