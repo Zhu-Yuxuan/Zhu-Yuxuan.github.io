@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of  the course VV186 in UM-SJTU JI.">
+  <meta name="description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of the course VV186 in UM-SJTU JI.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Basics">
 <meta property="og:url" content="http://example.com/2020/12/23/Basics/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of  the course VV186 in UM-SJTU JI.">
+<meta property="og:description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-23T01:54:21.000Z">
 <meta property="article:modified_time" content="2020-12-24T11:08:06.071Z">
@@ -214,131 +214,100 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>A collection of theorems in <em>Logic, Number, Sequence</em> and <em>Function</em> based on the first part of  the course VV186 in UM-SJTU JI.</p>
+        <p>A collection of theorems in <em>Logic, Number, Sequence</em> and <em>Function</em> based on the first part of the course VV186 in UM-SJTU JI.</p>
 <a id="more"></a>
-<h1>Logics.</h1>
-<p><strong>de Morgan rules</strong><br>
-$$<br>
-\neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\<br>
-\neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)<br>
-$$</p>
-<p><strong>Contraposition</strong><br>
-$$<br>
-(A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)<br>
-$$<br>
-​	e.g.: contraposition of quantifiers:<br>
-$$<br>
-\underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))<br>
-$$</p>
-<p><strong>Russel Antinomy.</strong>	The predicate $P(x):x\notin x$ does not define a set $A={x:P(x)}$.</p>
+<h1 id="logics.">Logics.</h1>
+<p><strong>de Morgan rules</strong> <span class="math display">\[
+\neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\\
+\neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)
+\]</span></p>
+<p><strong>Contraposition</strong> <span class="math display">\[
+(A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)
+\]</span> ​ e.g.: contraposition of quantifiers: <span class="math display">\[
+\underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))
+\]</span></p>
+<p><strong>Russel Antinomy.</strong> The predicate <span class="math inline">\(P(x):x\notin x\)</span> does not define a set <span class="math inline">\(A=\{x:P(x)\}\)</span>.</p>
 <p>Proof:</p>
-<ol>
-<li>
-<p>Assume $A\in A$. Then, according to $P(x)$, $A\notin A$.</p>
-</li>
-<li>
-<p>Assume $A\notin A$. Then, according to $\neg P(x)$, $A\in A$.</p>
-</li>
+<ol type="1">
+<li><p>Assume <span class="math inline">\(A\in A\)</span>. Then, according to <span class="math inline">\(P(x)\)</span>, <span class="math inline">\(A\notin A\)</span>.</p></li>
+<li><p>Assume <span class="math inline">\(A\notin A\)</span>. Then, according to <span class="math inline">\(\neg P(x)\)</span>, <span class="math inline">\(A\in A\)</span>.</p></li>
 </ol>
-<h1>Numbers.</h1>
+<h1 id="numbers.">Numbers.</h1>
 <p><strong>Mathematical Induction.</strong> works by establishing two statements:</p>
-<ol>
-<li>$A(n_0)$ is true,</li>
-<li>$A(n+1)$ is true whenever $A(n)$ is true for $n\geq n_0$, i.e., $\underset{n \in \mathbb{N} \atop n \geq n_{0}}{\forall}(A(n) \Rightarrow A(n+1))$</li>
+<ol type="1">
+<li><span class="math inline">\(A(n_0)\)</span> is true,</li>
+<li><span class="math inline">\(A(n+1)\)</span> is true whenever <span class="math inline">\(A(n)\)</span> is true for <span class="math inline">\(n\geq n_0\)</span>, i.e., <span class="math inline">\(\underset{n \in \mathbb{N} \atop n \geq n_{0}}{\forall}(A(n) \Rightarrow A(n+1))\)</span></li>
 </ol>
-<p><strong>Binomial Formula.</strong><br>
-$$<br>
-(a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}<br>
-n \<br>
-k<br>
-\end{array}\right) a^{k} b^{n-k}<br>
-$$</p>
-<p><strong>Triangle Inequality.</strong> For all real numbers $a,b\in \mathbb{R}$, we have<br>
-$$<br>
-||a|-|b|| \leq |a+b|\leq |a|+|b|<br>
-$$</p>
-<p><strong>The Square Root Problem.</strong> There exist no number $a\in \mathbb{Q}$ such that $a^2=2$.</p>
+<p><strong>Binomial Formula.</strong> <span class="math display">\[
+(a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
+n \\
+k
+\end{array}\right) a^{k} b^{n-k}
+\]</span></p>
+<p><strong>Triangle Inequality.</strong> For all real numbers <span class="math inline">\(a,b\in \mathbb{R}\)</span>, we have <span class="math display">\[
+||a|-|b|| \leq |a+b|\leq |a|+|b|
+\]</span></p>
+<p><strong>The Square Root Problem.</strong> There exist no number <span class="math inline">\(a\in \mathbb{Q}\)</span> such that <span class="math inline">\(a^2=2\)</span>.</p>
 <p>Proof.</p>
-<p>Assume $a=\frac{q}{p}$ such that $a^2=(\frac{q}{p})^2=2$, where $p,q\in \mathbb{N}$. Further assume that $p$ and $q$ does not have common divisor greater than 1.</p>
-<p>Then,<br>
-$$<br>
-q^2=2p^2<br>
-$$<br>
-This relation means that $q$ is even. Thus, we can make the substitute $q=2k$.</p>
-<p>Then,<br>
-$$<br>
-2k^2=p^2<br>
-$$<br>
-This relation means that $p$ is even. Hence, $p$ and $q$ have at least a divisor 2, which is contradict with our assumption.</p>
-<p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree $n$: $p(x)=a_0+a_1x+\cdots+a_nx^n$, there exist numbers $\lambda_1,…,\lambda_n\in\mathbb{C}$ such that<br>
-$$<br>
-p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)<br>
-$$</p>
-<h1>Sequences.</h1>
+<p>Assume <span class="math inline">\(a=\frac{q}{p}\)</span> such that <span class="math inline">\(a^2=(\frac{q}{p})^2=2\)</span>, where <span class="math inline">\(p,q\in \mathbb{N}\)</span>. Further assume that <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> does not have common divisor greater than 1.</p>
+<p>Then, <span class="math display">\[
+q^2=2p^2
+\]</span> This relation means that <span class="math inline">\(q\)</span> is even. Thus, we can make the substitute <span class="math inline">\(q=2k\)</span>.</p>
+<p>Then, <span class="math display">\[
+2k^2=p^2
+\]</span> This relation means that <span class="math inline">\(p\)</span> is even. Hence, <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> have at least a divisor 2, which is contradict with our assumption.</p>
+<p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree <span class="math inline">\(n\)</span>: <span class="math inline">\(p(x)=a_0+a_1x+\cdots+a_nx^n\)</span>, there exist numbers <span class="math inline">\(\lambda_1,...,\lambda_n\in\mathbb{C}\)</span> such that <span class="math display">\[
+p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)
+\]</span></p>
+<h1 id="sequences.">Sequences.</h1>
 <p><strong>General Results</strong>:</p>
-<ol>
+<ol type="1">
 <li>A convergent sequence is bounded.</li>
 <li>A convergent sequence has precisely one limit.</li>
-<li>If $\lim a_n=a,\lim b_n=b$, then
-<ol>
-<li>$\lim(a_n+b_n)=a+b$</li>
-<li>$\lim(a_n\cdot b_n)=a\cdot b$</li>
-<li>$\lim(a_n/b_n)=a/b$, if $b\ne0$</li>
+<li>If <span class="math inline">\(\lim a_n=a,\lim b_n=b\)</span>, then
+<ol type="1">
+<li><span class="math inline">\(\lim(a_n+b_n)=a+b\)</span></li>
+<li><span class="math inline">\(\lim(a_n\cdot b_n)=a\cdot b\)</span></li>
+<li><span class="math inline">\(\lim(a_n/b_n)=a/b\)</span>, if <span class="math inline">\(b\ne0\)</span></li>
+</ol></li>
 </ol>
-</li>
-</ol>
-<p><strong>Squeeze Theorem.</strong> Let $(a_n),(b_n),(c_n)$ be real sequences with $a_n&lt;c_n&lt;b_n$ for sufficiently large $n$. Suppose that $\lim a_n=\lim b_n=a$. Then, $(c_n)$ converges and $\lim c_n=a$.</p>
-<p><strong>Bernoulli’s Inequality.</strong> For $x&gt;-1$, and $n\in\mathbb{N}$,<br>
-$$<br>
-(1+x)^n&gt;nx<br>
-$$</p>
+<p><strong>Squeeze Theorem.</strong> Let <span class="math inline">\((a_n),(b_n),(c_n)\)</span> be real sequences with <span class="math inline">\(a_n&lt;c_n&lt;b_n\)</span> for sufficiently large <span class="math inline">\(n\)</span>. Suppose that <span class="math inline">\(\lim a_n=\lim b_n=a\)</span>. Then, <span class="math inline">\((c_n)\)</span> converges and <span class="math inline">\(\lim c_n=a\)</span>.</p>
+<p><strong>Bernoulli's Inequality.</strong> For <span class="math inline">\(x&gt;-1\)</span>, and <span class="math inline">\(n\in\mathbb{N}\)</span>, <span class="math display">\[
+(1+x)^n&gt;nx
+\]</span></p>
 <p><strong>Monotonic Subsequence.</strong> Every sequence has a monotonic subsequence.</p>
 <p><strong>Theorem of Bolzano-Weierstraß.</strong> Every bounded real sequence has an accumulation point.</p>
-<p><strong>Definition of Cauchy Sequence.</strong> A sequence $(a_n)$ in a metric space $(M,\varrho)$ is called a Cauchy sequence if<br>
-$$<br>
-\underset{\varepsilon&gt;0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n&gt;N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)&lt;\varepsilon<br>
-$$<br>
-<strong>Properties of Cauchy Sequence.</strong></p>
-<ol>
-<li>
-<p>Every Cauchy sequence in $\mathbb{R}$ with the metric</p>
-<p>$$<br>
-\varrho:\mathbb{R}\times\mathbb{R}\rightarrow\mathbb{R},\ \ \ \ \ \varrho(x,y)=|x-y|<br>
-$$</p>
-<p>is convergent.</p>
-</li>
-<li>
-<p>Every convergent sequence is Cauchy sequence.</p>
-</li>
+<p><strong>Definition of Cauchy Sequence.</strong> A sequence <span class="math inline">\((a_n)\)</span> in a metric space <span class="math inline">\((M,\varrho)\)</span> is called a Cauchy sequence if <span class="math display">\[
+\underset{\varepsilon&gt;0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n&gt;N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)&lt;\varepsilon
+\]</span> <strong>Properties of Cauchy Sequence.</strong></p>
+<ol type="1">
+<li><p>Every Cauchy sequence in <span class="math inline">\(\mathbb{R}\)</span> with the metric</p>
+<p><span class="math display">\[
+\varrho:\mathbb{R}\times\mathbb{R}\rightarrow\mathbb{R},\ \ \ \ \ \varrho(x,y)=|x-y|
+\]</span></p>
+<p>is convergent.</p></li>
+<li><p>Every convergent sequence is Cauchy sequence.</p></li>
 </ol>
-<h1>Functions.</h1>
-<p><strong>The Big-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is not significantly larger than $|\phi(x)|$, where $x$ is near $x_0$ )<br>
-$$<br>
-f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0<br>
-$$<br>
-if and only if<br>
-$$<br>
-\underset{C&gt;0}{\exists}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|<br>
-$$</p>
-<p><strong>The Little-O Landau Symbol.</strong> Let $f,\phi$ be real- or complex-valued functions defined on a subset $\Omega\subset\mathbb{R}$ and let $x_0$ be an accumulating point of $\Omega$. We say that ( $|f(x)|$ is much smaller than $|\phi(x)|$, where $x$ is near $x_0$ )<br>
-$$<br>
-f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0<br>
-$$<br>
-if and only if<br>
-$$<br>
-\underset{C&gt;0}{\forall}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega\backslash{x_0}}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| &lt; C|\phi(x)|<br>
-$$</p>
-<p><strong>A Useful Lemma from Continuity.</strong> Let $\Omega\subset\mathbb{R}$ be some set, $f:\Omega\rightarrow\mathbb{R}$ a function that is continuous at some point $x_0\in\Omega$ and assume that $f(x_0)&gt;0$. Then there exists a $\delta&gt;0$ such that $f(x)&gt;0$ for all $x\in(x_0-\delta,x+\delta)\cap\Omega$.</p>
-<p><strong>Zero Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function with $f(a)&lt;0&lt;f(b)$. There exists some $x\in[a,b]$ such that $f(x)=0$.</p>
-<p><strong>Bolzano Intermediate Value Theorem.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then for $y\in[\min{f(a),f(b)},\max{f(a),f(b)}]$, there exists some $x\in[a,b]$ such that $f(x)=y$.</p>
-<p><strong>Boundedness of Continuous Function.</strong> Let $a&lt;b$ and $f:[a,b]\rightarrow\mathbb{R}$ be a continuous function. Then there exists a $y\in[a,b]$ such that $f(x)&lt;f(y)$ for all $x\in[a,b]$.</p>
-<p><strong>Bijectivity.</strong> Let $a,b\in\mathbb{R}\cup{-\infty}\cup{\infty}$ such that $a&lt;b$. Let $f:[a,b]\rightarrow\mathbb{R}$ be strictly increasing and continuous. Then<br>
-$$<br>
-\alpha:=\lim\limits_{x\searrow a}\geq -\infty\<br>
-\beta:=\lim\limits_{x\nearrow b}\leq \infty\<br>
-$$<br>
-exist and $f$ is bijective.</p>
-<p><strong>Monotony.</strong> Let $I\subset\mathbb{R}$ be an interval and $\widetilde{\Omega}\subset\mathbb{R}$ a set. If $f:I\rightarrow\widetilde{\Omega}$ is continuous and bijective, then $f$ is strictly monotonic on $I$.</p>
+<h1 id="functions.">Functions.</h1>
+<p><strong>The Big-O Landau Symbol.</strong> Let <span class="math inline">\(f,\phi\)</span> be real- or complex-valued functions defined on a subset <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> and let <span class="math inline">\(x_0\)</span> be an accumulating point of <span class="math inline">\(\Omega\)</span>. We say that ( <span class="math inline">\(|f(x)|\)</span> is not significantly larger than <span class="math inline">\(|\phi(x)|\)</span>, where <span class="math inline">\(x\)</span> is near <span class="math inline">\(x_0\)</span> ) <span class="math display">\[
+f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0
+\]</span> if and only if <span class="math display">\[
+\underset{C&gt;0}{\exists}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|
+\]</span></p>
+<p><strong>The Little-O Landau Symbol.</strong> Let <span class="math inline">\(f,\phi\)</span> be real- or complex-valued functions defined on a subset <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> and let <span class="math inline">\(x_0\)</span> be an accumulating point of <span class="math inline">\(\Omega\)</span>. We say that ( <span class="math inline">\(|f(x)|\)</span> is much smaller than <span class="math inline">\(|\phi(x)|\)</span>, where <span class="math inline">\(x\)</span> is near <span class="math inline">\(x_0\)</span> ) <span class="math display">\[
+f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0
+\]</span> if and only if <span class="math display">\[
+\underset{C&gt;0}{\forall}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega\backslash\{x_0\}}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| &lt; C|\phi(x)|
+\]</span></p>
+<p><strong>A Useful Lemma from Continuity.</strong> Let <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> be some set, <span class="math inline">\(f:\Omega\rightarrow\mathbb{R}\)</span> a function that is continuous at some point <span class="math inline">\(x_0\in\Omega\)</span> and assume that <span class="math inline">\(f(x_0)&gt;0\)</span>. Then there exists a <span class="math inline">\(\delta&gt;0\)</span> such that <span class="math inline">\(f(x)&gt;0\)</span> for all <span class="math inline">\(x\in(x_0-\delta,x+\delta)\cap\Omega\)</span>.</p>
+<p><strong>Zero Value Theorem.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function with <span class="math inline">\(f(a)&lt;0&lt;f(b)\)</span>. There exists some <span class="math inline">\(x\in[a,b]\)</span> such that <span class="math inline">\(f(x)=0\)</span>.</p>
+<p><strong>Bolzano Intermediate Value Theorem.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function. Then for <span class="math inline">\(y\in[\min\{f(a),f(b)\},\max\{f(a),f(b)\}]\)</span>, there exists some <span class="math inline">\(x\in[a,b]\)</span> such that <span class="math inline">\(f(x)=y\)</span>.</p>
+<p><strong>Boundedness of Continuous Function.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function. Then there exists a <span class="math inline">\(y\in[a,b]\)</span> such that <span class="math inline">\(f(x)&lt;f(y)\)</span> for all <span class="math inline">\(x\in[a,b]\)</span>.</p>
+<p><strong>Bijectivity.</strong> Let <span class="math inline">\(a,b\in\mathbb{R}\cup\{-\infty\}\cup\{\infty\}\)</span> such that <span class="math inline">\(a&lt;b\)</span>. Let <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be strictly increasing and continuous. Then <span class="math display">\[
+\alpha:=\lim\limits_{x\searrow a}\geq -\infty\\
+\beta:=\lim\limits_{x\nearrow b}\leq \infty\\
+\]</span> exist and <span class="math inline">\(f\)</span> is bijective.</p>
+<p><strong>Monotony.</strong> Let <span class="math inline">\(I\subset\mathbb{R}\)</span> be an interval and <span class="math inline">\(\widetilde{\Omega}\subset\mathbb{R}\)</span> a set. If <span class="math inline">\(f:I\rightarrow\widetilde{\Omega}\)</span> is continuous and bijective, then <span class="math inline">\(f\)</span> is strictly monotonic on <span class="math inline">\(I\)</span>.</p>
 
     </div>
 
@@ -419,7 +388,7 @@ exist and $f$ is bijective.</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Logics.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">Numbers.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">Sequences.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text">Functions.</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#logics."><span class="nav-number">1.</span> <span class="nav-text">Logics.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#numbers."><span class="nav-number">2.</span> <span class="nav-text">Numbers.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sequences."><span class="nav-number">3.</span> <span class="nav-text">Sequences.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#functions."><span class="nav-number">4.</span> <span class="nav-text">Functions.</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

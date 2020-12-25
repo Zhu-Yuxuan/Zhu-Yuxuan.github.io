@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="A collection of theorems in Differential Calculus in one variable based on the second part of  the course VV186 in UM-SJTU JI.">
+  <meta name="description" content="A collection of theorems in Differential Calculus in one variable based on the second part of the course VV186 in UM-SJTU JI.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Differential Calculus">
 <meta property="og:url" content="http://example.com/2020/12/25/Differential-Calculus/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="A collection of theorems in Differential Calculus in one variable based on the second part of  the course VV186 in UM-SJTU JI.">
+<meta property="og:description" content="A collection of theorems in Differential Calculus in one variable based on the second part of the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-25T02:16:41.000Z">
-<meta property="article:modified_time" content="2020-12-25T13:20:01.024Z">
+<meta property="article:modified_time" content="2020-12-25T13:35:03.533Z">
 <meta property="article:author" content="Yuxuan">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-25 10:16:41 / Modified: 21:20:01" itemprop="dateCreated datePublished" datetime="2020-12-25T10:16:41+08:00">2020-12-25</time>
+              <time title="Created: 2020-12-25 10:16:41 / Modified: 21:35:03" itemprop="dateCreated datePublished" datetime="2020-12-25T10:16:41+08:00">2020-12-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,174 +208,123 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>A collection of theorems in <em>Differential Calculus in one variable</em> based on the second part of  the course VV186 in UM-SJTU JI.</p>
+        <p>A collection of theorems in <em>Differential Calculus in one variable</em> based on the second part of the course VV186 in UM-SJTU JI.</p>
 <a id="more"></a>
-<h1>Real Functions.</h1>
-<p><strong>The Inverse Function Theorem.</strong> Let $I$ be an open interval and let function $f:I\rightarrow\mathbb{R}$ be differentiable and strictly monotonic. Then the inverse map $f^{-1}=g:f(I)\rightarrow I$ exists and differentiable at all points $y\in f(I)$ for which $f’(g(y))\neq 0$. Furthermore,<br>
-$$<br>
-g’(y)=\frac{1}{f’(g(y))}<br>
-$$</p>
-<p><strong>Rolle’s Theorem.</strong> Let $f$ be a real function and $a&lt;b\in\mathbb{R}$ such that $[a,b]\in\text{dom}f$. Assume $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$ and that $f(a)=f(b)$. Then there exists a number $x\in(a,b)$ such that $f(x)=0$.</p>
-<p><strong>Mean Value Theorem.</strong> Let $f$ be a real function and $a&lt;b\in\mathbb{R}$ such that $[a,b]\in\text{dom}f$. Assume $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$. Then there exists a number $x\in(a,b)$ such that<br>
-$$<br>
-f’(x)=\frac{f(b)-f(a)}{b-a}<br>
-$$</p>
-<p><strong>Cauchy Mean Value Theorem.</strong> Let $f,g$ be real functions and $[a,b]\subset\text{dom}f\ \cap\text{dom}g$. If $f,g$ are continuous on $[a,b]$ and differentiable on $(a,b)$, then there exists a number $x\in(a,b)$ such that<br>
-$$<br>
-(f(b)-f(a))g’(x)=(g(b)-g(a))f’(x)<br>
-$$</p>
-<p><strong>L’Hôpital’s Rule.</strong> Let $f$ and $g$ be real functions and $b\in\overline{\operatorname{dom} f \cap \operatorname{dom} g}$ with<br>
-$$<br>
-\lim\limits_{x\searrow b}f(x)=0\ \ \ \ \text{and}\ \ \ \ \lim\limits_{x\searrow b}g(x)=0<br>
-$$<br>
-Suppose that there exists a $\delta&gt;0$ such that $f$ and $g$ are defined and differentiable on interval $(b,b+\delta)$ and $g’(x)\neq0$ for all $x\in(b,b+\delta)$. Suppose further that the limit $\lim\limits_{x\searrow b}f’(x)/g(x):=L$ exists. Then<br>
-$$<br>
-\lim\limits_{x\searrow b}\frac{f(x)}{g(x)}=L<br>
-$$</p>
-<p><strong>The Continuousness of Sequence of Functions.</strong> Let $[a,b]\subset\mathbb{R}$ be closed interval. Let $(f_n)$ be a sequence of continuous functions defined on $[a,b]$ such that $(f_n)$ converges to some $f(x)\in\mathbb{R}$ as $n\rightarrow\infty$ for every $x\in[a,b]$. If the sequence $(f_n)$ convergences uniformly to the thereby defined function $f:[a,b]\rightarrow\mathbb{R}$, then $f$ is continuous.</p>
-<p><strong>The Completeness of $C([a,b])$.</strong> Let $[a,b]\subset\mathbb{R}$ be a closed interval and $C([a,b])$ be the vector space of continuous functions on $[a,b]$, endowed with the metric<br>
-$$<br>
-\varrho(f,g)=|f-g|=\sup\limits_{x\in[a,b]}|f(x)-g(x)|<br>
-$$<br>
-Then every Cauchy sequence in this metric space is convergent.</p>
-<h1>Series.</h1>
-<p><strong>Cauchy Criterion.</strong> Let $\sum a_k$ be a series in a complete vector space $(V,|\cdot|)$. Then<br>
-$$<br>
-\begin{equation}\begin{split}<br>
-\sum a_k\ \text{converges} &amp; \Leftrightarrow (s_n)<em>{n\in\mathbb{N}}\ \text{converges, where}\ s_n=\sum\limits</em>{k=0}^na_k\<br>
-&amp; \Leftrightarrow (s_n)\ \text{is Cauchy}\<br>
-&amp; \Leftrightarrow \underset{\varepsilon&gt;0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m&gt;n&gt;N}{\forall}\ | s_{m}-s_{n} |&lt;\varepsilon\<br>
-&amp; \Leftrightarrow \underset{\varepsilon&gt;0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m&gt;n&gt;N}{\forall}\ |\sum\limits_{k=n+1}^{m}a_k|&lt;\varepsilon\ \ \cdots\cdots(<em>)<br>
-\end{split}\end{equation}<br>
-$$<br>
-From property $(</em>)$ we know that</p>
-<ol>
-<li>
-<p>If series $\sum a_k$ converges, then the sequence $a_k\rightarrow 0$, as $k\rightarrow\infty$.</p>
-</li>
-<li>
-<p>If series $\sum a_k$ converges, then the sequence $(A_n)$ given by<br>
-$$<br>
-A_n=\sum\limits_{k=n}^\infty a_k<br>
-$$<br>
-converges to 0, as $n\rightarrow\infty$.</p>
-</li>
+<h1 id="real-functions.">Real Functions.</h1>
+<p><strong>The Inverse Function Theorem.</strong> Let <span class="math inline">\(I\)</span> be an open interval and let function <span class="math inline">\(f:I\rightarrow\mathbb{R}\)</span> be differentiable and strictly monotonic. Then the inverse map <span class="math inline">\(f^{-1}=g:f(I)\rightarrow I\)</span> exists and differentiable at all points <span class="math inline">\(y\in f(I)\)</span> for which <span class="math inline">\(f&#39;(g(y))\neq 0\)</span>. Furthermore, <span class="math display">\[
+g&#39;(y)=\frac{1}{f&#39;(g(y))}
+\]</span></p>
+<p><strong>Rolle's Theorem.</strong> Let <span class="math inline">\(f\)</span> be a real function and <span class="math inline">\(a&lt;b\in\mathbb{R}\)</span> such that <span class="math inline">\([a,b]\in\text{dom}f\)</span>. Assume <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\([a,b]\)</span> and differentiable on <span class="math inline">\((a,b)\)</span> and that <span class="math inline">\(f(a)=f(b)\)</span>. Then there exists a number <span class="math inline">\(x\in(a,b)\)</span> such that <span class="math inline">\(f(x)=0\)</span>.</p>
+<p><strong>Mean Value Theorem.</strong> Let <span class="math inline">\(f\)</span> be a real function and <span class="math inline">\(a&lt;b\in\mathbb{R}\)</span> such that <span class="math inline">\([a,b]\in\text{dom}f\)</span>. Assume <span class="math inline">\(f\)</span> is continuous on <span class="math inline">\([a,b]\)</span> and differentiable on <span class="math inline">\((a,b)\)</span>. Then there exists a number <span class="math inline">\(x\in(a,b)\)</span> such that <span class="math display">\[
+f&#39;(x)=\frac{f(b)-f(a)}{b-a}
+\]</span></p>
+<p><strong>Cauchy Mean Value Theorem.</strong> Let <span class="math inline">\(f,g\)</span> be real functions and <span class="math inline">\([a,b]\subset\text{dom}f\ \cap\text{dom}g\)</span>. If <span class="math inline">\(f,g\)</span> are continuous on <span class="math inline">\([a,b]\)</span> and differentiable on <span class="math inline">\((a,b)\)</span>, then there exists a number <span class="math inline">\(x\in(a,b)\)</span> such that <span class="math display">\[
+(f(b)-f(a))g&#39;(x)=(g(b)-g(a))f&#39;(x)
+\]</span></p>
+<p><strong>L'Hôpital's Rule.</strong> Let <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> be real functions and <span class="math inline">\(b\in\overline{\operatorname{dom} f \cap \operatorname{dom} g}\)</span> with <span class="math display">\[
+\lim\limits_{x\searrow b}f(x)=0\ \ \ \ \text{and}\ \ \ \ \lim\limits_{x\searrow b}g(x)=0
+\]</span> Suppose that there exists a <span class="math inline">\(\delta&gt;0\)</span> such that <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are defined and differentiable on interval <span class="math inline">\((b,b+\delta)\)</span> and <span class="math inline">\(g&#39;(x)\neq0\)</span> for all <span class="math inline">\(x\in(b,b+\delta)\)</span>. Suppose further that the limit <span class="math inline">\(\lim\limits_{x\searrow b}f&#39;(x)/g(x):=L\)</span> exists. Then <span class="math display">\[
+\lim\limits_{x\searrow b}\frac{f(x)}{g(x)}=L
+\]</span></p>
+<p><strong>The Continuousness of Sequence of Functions.</strong> Let <span class="math inline">\([a,b]\subset\mathbb{R}\)</span> be closed interval. Let <span class="math inline">\((f_n)\)</span> be a sequence of continuous functions defined on <span class="math inline">\([a,b]\)</span> such that <span class="math inline">\((f_n)\)</span> converges to some <span class="math inline">\(f(x)\in\mathbb{R}\)</span> as <span class="math inline">\(n\rightarrow\infty\)</span> for every <span class="math inline">\(x\in[a,b]\)</span>. If the sequence <span class="math inline">\((f_n)\)</span> convergences uniformly to the thereby defined function <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span>, then <span class="math inline">\(f\)</span> is continuous.</p>
+<p><strong>The Completeness of <span class="math inline">\(C([a,b])\)</span>.</strong> Let <span class="math inline">\([a,b]\subset\mathbb{R}\)</span> be a closed interval and <span class="math inline">\(C([a,b])\)</span> be the vector space of continuous functions on <span class="math inline">\([a,b]\)</span>, endowed with the metric <span class="math display">\[
+\varrho(f,g)=\|f-g\|=\sup\limits_{x\in[a,b]}|f(x)-g(x)|
+\]</span> Then every Cauchy sequence in this metric space is convergent.</p>
+<h1 id="series.">Series.</h1>
+<p><strong>Cauchy Criterion.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a series in a complete vector space <span class="math inline">\((V,\|\cdot\|)\)</span>. Then <span class="math display">\[
+\begin{equation}
+\begin{split} 
+\sum a_k\ \text{converges} &amp; \Leftrightarrow (s_n)_{n\in\mathbb{N}}\ \text{converges, where}\ s_n=\sum\limits_{k=0}^na_k \newline
+&amp; \Leftrightarrow (s_n)\ \text{is Cauchy} \newline
+&amp; \Leftrightarrow \underset{\varepsilon&gt;0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m&gt;n&gt;N}{\forall}\ \| s_{m}-s_{n} \|&lt;\varepsilon \newline
+&amp; \Leftrightarrow \underset{\varepsilon&gt;0}{\forall}\ \underset{N \in \mathbb{N}}{\exists}\ \underset{m&gt;n&gt;N}{\forall}\ \|\sum\limits_{k=n+1}^{m}a_k\|&lt;\varepsilon\ \ \cdots\cdots(1)
+\end{split}
+\end{equation}
+\]</span> From property <span class="math inline">\((1)\)</span> we know that</p>
+<ol type="1">
+<li><p>If series <span class="math inline">\(\sum a_k\)</span> converges, then the sequence <span class="math inline">\(a_k\rightarrow 0\)</span>, as <span class="math inline">\(k\rightarrow\infty\)</span>.</p></li>
+<li><p>If series <span class="math inline">\(\sum a_k\)</span> converges, then the sequence <span class="math inline">\((A_n)\)</span> given by <span class="math display">\[
+A_n=\sum\limits_{k=n}^\infty a_k
+\]</span> converges to 0, as <span class="math inline">\(n\rightarrow\infty\)</span>.</p></li>
 </ol>
-<p><strong>Approximation of <em>p</em>-Series.</strong> For $p&gt;0$,<br>
-$$<br>
-\frac{2^p-1}{2^p}+\frac{2}{2^p}s_n§&lt;s_{2n}§&lt;1+\frac{2}{2^p}s_n§<br>
-$$</p>
-<p><strong>Convergence of <em>p</em>-Series.</strong> The <em>p</em>-series $\sum\limits_{k=0}^{\infty}\frac{1}{k^p}$ converges when $p&gt;1$ and diverges when $p\leq1$.</p>
-<p><strong>Triangle Inequality of Series.</strong> Let $(V,|\cdot|)$ be a complete normed vector space and $\sum a_k$ an absolutely convergent series. Then<br>
-$$<br>
-|\sum\limits_{k=0}^\infty a_k|\leq\sum\limits_{k=0}^\infty|a_k|<br>
-$$</p>
-<p><strong>Comparison Test.</strong> Let $(a_k)$ and $(b_k)$ be real-valued sequences with $0\leq a_k\leq b_k$ for sufficiently large $k$. Then<br>
-$$<br>
-\sum b_k\ \text{converges}\ \ \Rightarrow\ \ \sum a_k\ \text{converges}<br>
-$$</p>
-<p><strong>Weierstraß M-Test.</strong> Let $\Omega\subset\mathbb{R}$ and $(f_k)$ be a sequence of functions defined on $\Omega$, $f_k:\Omega\rightarrow\mathbb{C}$, satisfying<br>
-$$<br>
-\sup\limits_{x\in\Omega}|f_k(x)|\leq M_k,\ \ \ \ k\in\mathbb{N}<br>
-$$<br>
-for a sequence of real numbers $(M_k)$. Suppose that $(M_k)$ converges. Then the limit<br>
-$$<br>
-f(x):=\sum\limits_{k=0}^\infty f_k(x)<br>
-$$<br>
-exists for every $x\in\Omega$.</p>
-<p>Furthermore, the sequence $(F_n)$ of the partial sums<br>
-$$<br>
-F_n=\sum\limits_{k=0}^n f_k(x)<br>
-$$<br>
-converges to limits $f(x)$</p>
-<p><strong>Root Test.</strong> Let $\sum a_k$ be a series of non-negative real numbers.</p>
-<ol>
-<li>
-<p>Suppose that there exists a $q&lt;1$ such that<br>
-$$<br>
-\sqrt[k]{a_k}\leq q,\ \ \ \text{for sufficiently large }k<br>
-$$<br>
-Then $\sum a_k$ converges.</p>
-</li>
-<li>
-<p>Suppose that<br>
-$$<br>
-\sqrt[k]{a_k}\leq 1,\ \ \ \text{for sufficiently large }k<br>
-$$<br>
-Then $\sum a_k$ diverges.</p>
-</li>
+<p><strong>Approximation of <em>p</em>-Series.</strong> For <span class="math inline">\(p&gt;0\)</span>, <span class="math display">\[
+\frac{2^p-1}{2^p}+\frac{2}{2^p}s_n(p)&lt;s_{2n}(p)&lt;1+\frac{2}{2^p}s_n(p)
+\]</span></p>
+<p><strong>Convergence of <em>p</em>-Series.</strong> The <em>p</em>-series <span class="math inline">\(\sum\limits_{k=0}^{\infty}\frac{1}{k^p}\)</span> converges when <span class="math inline">\(p&gt;1\)</span> and diverges when <span class="math inline">\(p\leq1\)</span>.</p>
+<p><strong>Triangle Inequality of Series.</strong> Let <span class="math inline">\((V,\|\cdot\|)\)</span> be a complete normed vector space and <span class="math inline">\(\sum a_k\)</span> an absolutely convergent series. Then <span class="math display">\[
+\|\sum\limits_{k=0}^\infty a_k\|\leq\sum\limits_{k=0}^\infty\|a_k\|
+\]</span></p>
+<p><strong>Comparison Test.</strong> Let <span class="math inline">\((a_k)\)</span> and <span class="math inline">\((b_k)\)</span> be real-valued sequences with <span class="math inline">\(0\leq a_k\leq b_k\)</span> for sufficiently large <span class="math inline">\(k\)</span>. Then <span class="math display">\[
+\sum b_k\ \text{converges}\ \ \Rightarrow\ \ \sum a_k\ \text{converges}
+\]</span></p>
+<p><strong>Weierstraß M-Test.</strong> Let <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> and <span class="math inline">\((f_k)\)</span> be a sequence of functions defined on <span class="math inline">\(\Omega\)</span>, <span class="math inline">\(f_k:\Omega\rightarrow\mathbb{C}\)</span>, satisfying <span class="math display">\[
+\sup\limits_{x\in\Omega}|f_k(x)|\leq M_k,\ \ \ \ k\in\mathbb{N}
+\]</span> for a sequence of real numbers <span class="math inline">\((M_k)\)</span>. Suppose that <span class="math inline">\((M_k)\)</span> converges. Then the limit <span class="math display">\[
+f(x):=\sum\limits_{k=0}^\infty f_k(x)
+\]</span> exists for every <span class="math inline">\(x\in\Omega\)</span>.</p>
+<p>Furthermore, the sequence <span class="math inline">\((F_n)\)</span> of the partial sums <span class="math display">\[
+F_n=\sum\limits_{k=0}^n f_k(x)
+\]</span> converges to limits <span class="math inline">\(f(x)\)</span></p>
+<p><strong>Root Test.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a series of non-negative real numbers.</p>
+<ol type="1">
+<li><p>Suppose that there exists a <span class="math inline">\(q&lt;1\)</span> such that <span class="math display">\[
+\sqrt[k]{a_k}\leq q,\ \ \ \text{for sufficiently large }k
+\]</span> Then <span class="math inline">\(\sum a_k\)</span> converges.</p></li>
+<li><p>Suppose that <span class="math display">\[
+\sqrt[k]{a_k}\leq 1,\ \ \ \text{for sufficiently large }k
+\]</span> Then <span class="math inline">\(\sum a_k\)</span> diverges.</p></li>
 </ol>
-<p><strong>Root Test Using Limits.</strong> Let $\sum a_k$ be a series of non-negative real numbers. Then<br>
-$$<br>
-\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}&lt;1\Rightarrow \sum a_k\ \text{converges}\<br>
-\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}&gt;1\Rightarrow \sum a_k\ \text{diverges}\<br>
-$$</p>
-<p><strong>Ratio Test.</strong> Let  be a series of positive real numbers.</p>
-<ol>
-<li>
-<p>Suppose that there exists a $q&lt;1$ such that<br>
-$$<br>
-\frac{a_{k+1}}{a_k}\leq q,\ \ \ \text{for sufficiently large }k<br>
-$$<br>
-Then $\sum a_k$ converges.</p>
-</li>
-<li>
-<p>Suppose that<br>
-$$<br>
-\frac{a_{k+1}}{a_k}\geq 1,\ \ \ \text{for sufficiently large }k<br>
-$$<br>
-Then $\sum a_k$ diverges.</p>
-</li>
+<p><strong>Root Test Using Limits.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a series of non-negative real numbers. Then <span class="math display">\[
+\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}&lt;1\Rightarrow \sum a_k\ \text{converges}\\
+\varlimsup_{k\rightarrow\infty}\sqrt[k]{a_k}&gt;1\Rightarrow \sum a_k\ \text{diverges}\\
+\]</span></p>
+<p><strong>Ratio Test.</strong> Let be a series of positive real numbers.</p>
+<ol type="1">
+<li><p>Suppose that there exists a <span class="math inline">\(q&lt;1\)</span> such that <span class="math display">\[
+\frac{a_{k+1}}{a_k}\leq q,\ \ \ \text{for sufficiently large }k
+\]</span> Then <span class="math inline">\(\sum a_k\)</span> converges.</p></li>
+<li><p>Suppose that <span class="math display">\[
+\frac{a_{k+1}}{a_k}\geq 1,\ \ \ \text{for sufficiently large }k
+\]</span> Then <span class="math inline">\(\sum a_k\)</span> diverges.</p></li>
 </ol>
-<p><strong>Ratio Test Using Limits.</strong> Let $\sum a_k$ be a series of positive real numbers. Then<br>
-$$<br>
-\varlimsup_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}&lt;1\Rightarrow \sum a_k\ \text{converges}\<br>
-\varliminf_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}&gt;1\Rightarrow \sum a_k\ \text{diverges}\<br>
-$$</p>
-<p><strong>Ratio Comparison Test.</strong> Let $(a_k)$ and $(b_k)$ be sequences of strictly positive real numbers. Suppose $\sum b_k$ converges. If<br>
-$$<br>
-\frac{a_{k+1}}{a_k}\leq\frac{b_{k+1}}{b_k},\ \ \ \text{for sufficiently large }k<br>
-$$<br>
-then $\sum a_k$ converges.</p>
-<p><strong>Raabe’s Test.</strong> Let $\sum a_k$ be a series of positive real numbers. Suppose that there exists a $p&gt;1$ such that<br>
-$$<br>
-\frac{a_{k+1}}{a_k}\leq 1-\frac{p}{k},\ \ \ \ \text{for sufficiently large }k<br>
-$$<br>
-Then $\sum a_k$ converges.</p>
-<p><strong>Rearrangement of Absolutely Convergent Series.</strong> Assume that $\sum a_k$ is an absolutely convergent series in a complete normed  vector space. If the summands of the series are rearranged, the new series $\sum b_j,\ b_j=a_{k(j)},\ k: \mathbb{N}\rightarrow \mathbb{N}$ bijective, converges absolutely with the same sum as $\sum a_k$.</p>
-<p><strong>Rearrangement of Conditionally Convergent Series.</strong> Let $\sum a_k$ be a conditionally convergent series of real numbers. Then for  any $\alpha \in \mathbb{R}$ there exists a rearrangement $b_j = a_{k(j)},\ k:\mathbb{N}\rightarrow\mathbb{N}$ bijective, of $\sum a_k$ such that $\sum b_j=\alpha$.</p>
-<p><strong>Leibniz Theorem.</strong> Let $\sum a_k$ be a complex series whose partial sum are bounded and need not converge. Let $(a_k)$ be a decreasing convergent sequence with limit zero, $a_k\searrow 0$. Then the series<br>
-$$<br>
-\sum \alpha_ka_k,\ \ \text{converges}<br>
-$$</p>
-<p><strong>Summation by Parts (Abel transformation).</strong> For $m&gt;n$,<br>
-$$<br>
-\sum_{k=n+1}^{m} a_{k}\left(b_{k}-b_{k-1}\right)=a_{m+1} b_{m}-a_{n+1} b_{n}-\sum_{k=n+1}^{m}\left(a_{k+1}-a_{k}\right) b_{k}<br>
-$$</p>
-<p><strong>Convergence of Cauchy Product.</strong> Let $\sum a_k$ and $\sum b_k$ be absolutely convergent series. Then the Cauchy product $\sum c_k$ given by<br>
-$$<br>
-c_k:=\sum\limits_{i+j=k}a_ib_j<br>
-$$<br>
-converges absolutely and $\sum c_k=(\sum a_k)(\sum b_k)$</p>
-<p><strong>Radius of Convergence of Power Series.</strong> Let $\sum a_kz^k$ be a complex power series. Then there exists a unique number $\varrho\in[0,\infty)\cup{\infty}$ such that</p>
-<ol>
-<li>$\sum a_kz^k$ is absolutely convergent at $z_0\in\mathbb{C}$ if $|z_0|&lt;\varrho$.</li>
-<li>$\sum a_kz^k$ diverges at $z_0\in\mathbb{C}$ if $|z_0|&gt;\varrho$.</li>
+<p><strong>Ratio Test Using Limits.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a series of positive real numbers. Then <span class="math display">\[
+\varlimsup_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}&lt;1\Rightarrow \sum a_k\ \text{converges}\\
+\varliminf_{k\rightarrow\infty}\frac{a_{k+1}}{a_k}&gt;1\Rightarrow \sum a_k\ \text{diverges}\\
+\]</span></p>
+<p><strong>Ratio Comparison Test.</strong> Let <span class="math inline">\((a_k)\)</span> and <span class="math inline">\((b_k)\)</span> be sequences of strictly positive real numbers. Suppose <span class="math inline">\(\sum b_k\)</span> converges. If <span class="math display">\[
+\frac{a_{k+1}}{a_k}\leq\frac{b_{k+1}}{b_k},\ \ \ \text{for sufficiently large }k
+\]</span> then <span class="math inline">\(\sum a_k\)</span> converges.</p>
+<p><strong>Raabe's Test.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a series of positive real numbers. Suppose that there exists a <span class="math inline">\(p&gt;1\)</span> such that <span class="math display">\[
+\frac{a_{k+1}}{a_k}\leq 1-\frac{p}{k},\ \ \ \ \text{for sufficiently large }k
+\]</span> Then <span class="math inline">\(\sum a_k\)</span> converges.</p>
+<p><strong>Rearrangement of Absolutely Convergent Series.</strong> Assume that <span class="math inline">\(\sum a_k\)</span> is an absolutely convergent series in a complete normed vector space. If the summands of the series are rearranged, the new series <span class="math inline">\(\sum b_j,\ b_j=a_{k(j)},\ k: \mathbb{N}\rightarrow \mathbb{N}\)</span> bijective, converges absolutely with the same sum as <span class="math inline">\(\sum a_k\)</span>.</p>
+<p><strong>Rearrangement of Conditionally Convergent Series.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a conditionally convergent series of real numbers. Then for any <span class="math inline">\(\alpha \in \mathbb{R}\)</span> there exists a rearrangement <span class="math inline">\(b_j = a_{k(j)},\ k:\mathbb{N}\rightarrow\mathbb{N}\)</span> bijective, of <span class="math inline">\(\sum a_k\)</span> such that <span class="math inline">\(\sum b_j=\alpha\)</span>.</p>
+<p><strong>Leibniz Theorem.</strong> Let <span class="math inline">\(\sum a_k\)</span> be a complex series whose partial sum are bounded and need not converge. Let <span class="math inline">\((a_k)\)</span> be a decreasing convergent sequence with limit zero, <span class="math inline">\(a_k\searrow 0\)</span>. Then the series <span class="math display">\[
+\sum \alpha_ka_k,\ \ \text{converges}
+\]</span></p>
+<p><strong>Summation by Parts (Abel transformation).</strong> For <span class="math inline">\(m&gt;n\)</span>, <span class="math display">\[
+\sum_{k=n+1}^{m} a_{k}\left(b_{k}-b_{k-1}\right)=a_{m+1} b_{m}-a_{n+1} b_{n}-\sum_{k=n+1}^{m}\left(a_{k+1}-a_{k}\right) b_{k}
+\]</span></p>
+<p><strong>Convergence of Cauchy Product.</strong> Let <span class="math inline">\(\sum a_k\)</span> and <span class="math inline">\(\sum b_k\)</span> be absolutely convergent series. Then the Cauchy product <span class="math inline">\(\sum c_k\)</span> given by <span class="math display">\[
+c_k:=\sum\limits_{i+j=k}a_ib_j
+\]</span> converges absolutely and <span class="math inline">\(\sum c_k=(\sum a_k)(\sum b_k)\)</span></p>
+<p><strong>Radius of Convergence of Power Series.</strong> Let <span class="math inline">\(\sum a_kz^k\)</span> be a complex power series. Then there exists a unique number <span class="math inline">\(\varrho\in[0,\infty)\cup{\infty}\)</span> such that</p>
+<ol type="1">
+<li><span class="math inline">\(\sum a_kz^k\)</span> is absolutely convergent at <span class="math inline">\(z_0\in\mathbb{C}\)</span> if <span class="math inline">\(|z_0|&lt;\varrho\)</span>.</li>
+<li><span class="math inline">\(\sum a_kz^k\)</span> diverges at <span class="math inline">\(z_0\in\mathbb{C}\)</span> if <span class="math inline">\(|z_0|&gt;\varrho\)</span>.</li>
 </ol>
-<p><strong>Hadamard’s Formula.</strong> The radius of convergence is given by<br>
-$$<br>
-\varrho=<br>
-\begin{cases}<br>
-\frac{1}{\overline{\lim } \sqrt[k]{\left|a_{k}\right|}}, &amp; 0&lt;\varlimsup\limits_{k \rightarrow \infty} \sqrt[k]{\left|a_{k}\right|}&lt;\infty \newline<br>
-0, &amp; \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=\infty \newline<br>
-\infty, &amp; \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=0<br>
-\end{cases}<br>
-$$</p>
-<p><strong>Convergence of the Differentiation of Power Series.</strong> Let $\sum a_kz^k$ be a complex power series with radius of convergence $\varrho$. Then the series $\sum ka_kz^{k-1}$ has the same radius of convergence $\varrho$.</p>
-<p><strong>The Most Beautiful Theorem.</strong><br>
-$$<br>
-e^{i\pi}+1=0<br>
-$$</p>
+<p><strong>Hadamard's Formula.</strong> The radius of convergence is given by <span class="math display">\[
+\varrho=
+\begin{cases}
+\frac{1}{\overline{\lim } \sqrt[k]{\left|a_{k}\right|}}, &amp; 0&lt;\varlimsup\limits_{k \rightarrow \infty} \sqrt[k]{\left|a_{k}\right|}&lt;\infty \newline
+0, &amp; \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=\infty \newline
+\infty, &amp; \underset{k \rightarrow \infty}{\varlimsup} \sqrt[k]{\left|a_{k}\right|}=0
+\end{cases}
+\]</span></p>
+<p><strong>Convergence of the Differentiation of Power Series.</strong> Let <span class="math inline">\(\sum a_kz^k\)</span> be a complex power series with radius of convergence <span class="math inline">\(\varrho\)</span>. Then the series <span class="math inline">\(\sum ka_kz^{k-1}\)</span> has the same radius of convergence <span class="math inline">\(\varrho\)</span>.</p>
+<p><strong>The Most Beautiful Theorem.</strong> <span class="math display">\[
+e^{i\pi}+1=0
+\]</span></p>
 
     </div>
 
@@ -456,7 +405,7 @@ $$</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Real Functions.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">Series.</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#real-functions."><span class="nav-number">1.</span> <span class="nav-text">Real Functions.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#series."><span class="nav-number">2.</span> <span class="nav-text">Series.</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
