@@ -28,7 +28,7 @@
 <meta property="og:description" content="A collection of theorems in Logic, Number, Sequence and Function based on the first part of the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-12-23T01:54:21.000Z">
-<meta property="article:modified_time" content="2021-01-02T07:30:35.067Z">
+<meta property="article:modified_time" content="2021-01-02T07:37:49.239Z">
 <meta property="article:author" content="Yuxuan">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -191,7 +191,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-02 15:30:35" itemprop="dateModified" datetime="2021-01-02T15:30:35+08:00">2021-01-02</time>
+                <time title="Modified: 2021-01-02 15:37:49" itemprop="dateModified" datetime="2021-01-02T15:37:49+08:00">2021-01-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -221,45 +221,45 @@
 \neg(A \vee B) \Leftrightarrow(\neg A) \wedge(\neg B)\\
 \neg(A \wedge B) \Leftrightarrow(\neg A) \vee(\neg B)
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Contraposition</strong> <span class="math display">\[
 (A \Rightarrow B) \Leftrightarrow(\neg B \Rightarrow \neg A)
 \]</span> ​ e.g.: contraposition of quantifiers: <span class="math display">\[
 \underset{x \in M}{\exists} A(x)\Leftrightarrow \neg \underset{x \in M}{\forall}(\neg A(x))
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Russel Antinomy.</strong> The predicate <span class="math inline">\(P(x):x\notin x\)</span> does not define a set <span class="math inline">\(A=\{x:P(x)\}\)</span>.</p>
 <p>Proof:</p>
 <ol type="1">
 <li>Assume <span class="math inline">\(A\in A\)</span>. Then, according to <span class="math inline">\(P(x)\)</span>, <span class="math inline">\(A\notin A\)</span>.</li>
 <li>Assume <span class="math inline">\(A\notin A\)</span>. Then, according to <span class="math inline">\(\neg P(x)\)</span>, <span class="math inline">\(A\in A\)</span>.</li>
 </ol>
-<hr />
+<hr>
 <p><strong>Functional Completeness.</strong> A collection of logical operators is called functionally complete if every compound proposition is logically equivalent to a compound proposition involving only these logical operators.</p>
 <ol type="1">
 <li><span class="math inline">\(\{\wedge,\vee,\neg\}\)</span> is a functionally complete collection.</li>
 <li><span class="math inline">\(\{\wedge,\neg\}\)</span> is a functionally complete collection.</li>
 <li><span class="math inline">\(\{|\}\)</span> is a functionally complete collection, where <span class="math inline">\(|\)</span> stands for NAND, namely <span class="math inline">\(A \mid B: \equiv \neg(A \wedge B)\)</span></li>
 </ol>
-<hr />
+<hr>
 <h1 id="numbers.">Numbers.</h1>
 <p><strong>Mathematical Induction.</strong> works by establishing two statements:</p>
 <ol type="1">
 <li><span class="math inline">\(A(n_0)\)</span> is true,</li>
 <li><span class="math inline">\(A(n+1)\)</span> is true whenever <span class="math inline">\(A(n)\)</span> is true for <span class="math inline">\(n\geq n_0\)</span>, i.e., <span class="math inline">\(\underset{n \in \mathbb{N} \atop n \geq n_{0}}{\forall}(A(n) \Rightarrow A(n+1))\)</span></li>
 </ol>
-<hr />
+<hr>
 <p><strong>Binomial Formula.</strong> <span class="math display">\[
 (a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
 n \\
 k
 \end{array}\right) a^{k} b^{n-k}
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Triangle Inequality.</strong> For all real numbers <span class="math inline">\(a,b\in \mathbb{R}\)</span>, we have <span class="math display">\[
 ||a|-|b|| \leq |a+b|\leq |a|+|b|
 \]</span></p>
-<hr />
+<hr>
 <p><strong>The Square Root Problem.</strong> There exist no number <span class="math inline">\(a\in \mathbb{Q}\)</span> such that <span class="math inline">\(a^2=2\)</span>.</p>
 <p>Proof.</p>
 <p>Assume <span class="math inline">\(a=\frac{q}{p}\)</span> such that <span class="math inline">\(a^2=(\frac{q}{p})^2=2\)</span>, where <span class="math inline">\(p,q\in \mathbb{N}\)</span>. Further assume that <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> does not have common divisor greater than 1.</p>
@@ -269,11 +269,11 @@ q^2=2p^2
 <p>Then, <span class="math display">\[
 2k^2=p^2
 \]</span> This relation means that <span class="math inline">\(p\)</span> is even. Hence, <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> have at least a divisor 2, which is contradict with our assumption.</p>
-<hr />
+<hr>
 <p><strong>Fundamental Theorem of Algebra.</strong> For any polynomial of degree <span class="math inline">\(n\)</span>: <span class="math inline">\(p(x)=a_0+a_1x+\cdots+a_nx^n\)</span>, there exist numbers <span class="math inline">\(\lambda_1,...,\lambda_n\in\mathbb{C}\)</span> such that <span class="math display">\[
 p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)
 \]</span></p>
-<hr />
+<hr>
 <h1 id="sequences.">Sequences.</h1>
 <p><strong>General Results</strong>:</p>
 <ol type="1">
@@ -286,17 +286,17 @@ p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)
 <li><span class="math inline">\(\lim(a_n/b_n)=a/b\)</span>, if <span class="math inline">\(b\ne0\)</span></li>
 </ol></li>
 </ol>
-<hr />
+<hr>
 <p><strong>Squeeze Theorem.</strong> Let <span class="math inline">\((a_n),(b_n),(c_n)\)</span> be real sequences with <span class="math inline">\(a_n&lt;c_n&lt;b_n\)</span> for sufficiently large <span class="math inline">\(n\)</span>. Suppose that <span class="math inline">\(\lim a_n=\lim b_n=a\)</span>. Then, <span class="math inline">\((c_n)\)</span> converges and <span class="math inline">\(\lim c_n=a\)</span>.</p>
-<hr />
+<hr>
 <p><strong>Bernoulli's Inequality.</strong> For <span class="math inline">\(x&gt;-1\)</span>, and <span class="math inline">\(n\in\mathbb{N}\)</span>, <span class="math display">\[
 (1+x)^n&gt;nx
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Monotonic Subsequence.</strong> Every sequence has a monotonic subsequence.</p>
-<hr />
+<hr>
 <p><strong>Theorem of Bolzano-Weierstraß.</strong> Every bounded real sequence has an accumulation point.</p>
-<hr />
+<hr>
 <p><strong>Definition of Cauchy Sequence.</strong> A sequence <span class="math inline">\((a_n)\)</span> in a metric space <span class="math inline">\((M,\varrho)\)</span> is called a Cauchy sequence if <span class="math display">\[
 \underset{\varepsilon&gt;0}{\forall} \underset{N \in \mathbb{N}}{\exists}\ \underset{m,n&gt;N}{\forall}\ \ \varrho\left(a_{m}, a_{n}\right)&lt;\varepsilon
 \]</span> ---</p>
@@ -309,20 +309,20 @@ p(x)=(x-\lambda_1)(x-\lambda_2)\cdots(x-\lambda_n)
 <p>is convergent.</p></li>
 <li><p>Every convergent sequence is Cauchy sequence.</p></li>
 </ol>
-<hr />
+<hr>
 <h1 id="functions.">Functions.</h1>
 <p><strong>The Big-O Landau Symbol.</strong> Let <span class="math inline">\(f,\phi\)</span> be real- or complex-valued functions defined on a subset <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> and let <span class="math inline">\(x_0\)</span> be an accumulating point of <span class="math inline">\(\Omega\)</span>. We say that ( <span class="math inline">\(|f(x)|\)</span> is not significantly larger than <span class="math inline">\(|\phi(x)|\)</span>, where <span class="math inline">\(x\)</span> is near <span class="math inline">\(x_0\)</span> ) <span class="math display">\[
 f(x)=O(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0
 \]</span> if and only if <span class="math display">\[
 \underset{C&gt;0}{\exists}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| \leq C|\phi(x)|
 \]</span></p>
-<hr />
+<hr>
 <p><strong>The Little-O Landau Symbol.</strong> Let <span class="math inline">\(f,\phi\)</span> be real- or complex-valued functions defined on a subset <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> and let <span class="math inline">\(x_0\)</span> be an accumulating point of <span class="math inline">\(\Omega\)</span>. We say that ( <span class="math inline">\(|f(x)|\)</span> is much smaller than <span class="math inline">\(|\phi(x)|\)</span>, where <span class="math inline">\(x\)</span> is near <span class="math inline">\(x_0\)</span> ) <span class="math display">\[
 f(x)=o(\phi(x)),\ \ \ \ \text{as } x\rightarrow x_0
 \]</span> if and only if <span class="math display">\[
 \underset{C&gt;0}{\forall}\ \underset{\varepsilon&gt;0}{\exists}\ \underset{x\in\Omega\backslash\{x_0\}}{\forall}\ \left|x-x_{0}\right|&lt;\varepsilon \quad \Rightarrow \quad|f(x)| &lt; C|\phi(x)|
 \]</span></p>
-<hr />
+<hr>
 <p>For <strong>Landau Symbol</strong>, we have following relations, as <span class="math inline">\(x\rightarrow x_0\)</span>: <span class="math display">\[
 \begin{aligned}
 O(f(x))+O(g(x)) &amp;=O(|f(x)|+|g(x)|), \\
@@ -332,22 +332,22 @@ O(O(f(x))) &amp;=O(f(x)), \\
 o(O(f(x))&amp;=o(f(x)).
 \end{aligned}
 \]</span></p>
-<hr />
+<hr>
 <p><strong>A Useful Lemma from Continuity.</strong> Let <span class="math inline">\(\Omega\subset\mathbb{R}\)</span> be some set, <span class="math inline">\(f:\Omega\rightarrow\mathbb{R}\)</span> a function that is continuous at some point <span class="math inline">\(x_0\in\Omega\)</span> and assume that <span class="math inline">\(f(x_0)&gt;0\)</span>. Then there exists a <span class="math inline">\(\delta&gt;0\)</span> such that <span class="math inline">\(f(x)&gt;0\)</span> for all <span class="math inline">\(x\in(x_0-\delta,x+\delta)\cap\Omega\)</span>.</p>
-<hr />
+<hr>
 <p><strong>Zero Value Theorem.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function with <span class="math inline">\(f(a)&lt;0&lt;f(b)\)</span>. There exists some <span class="math inline">\(x\in[a,b]\)</span> such that <span class="math inline">\(f(x)=0\)</span>.</p>
-<hr />
+<hr>
 <p><strong>Bolzano Intermediate Value Theorem.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function. Then for <span class="math inline">\(y\in[\min\{f(a),f(b)\},\max\{f(a),f(b)\}]\)</span>, there exists some <span class="math inline">\(x\in[a,b]\)</span> such that <span class="math inline">\(f(x)=y\)</span>.</p>
-<hr />
+<hr>
 <p><strong>Boundedness of Continuous Function.</strong> Let <span class="math inline">\(a&lt;b\)</span> and <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be a continuous function. Then there exists a <span class="math inline">\(y\in[a,b]\)</span> such that <span class="math inline">\(f(x)&lt;f(y)\)</span> for all <span class="math inline">\(x\in[a,b]\)</span>.</p>
-<hr />
+<hr>
 <p><strong>Bijectivity.</strong> Let <span class="math inline">\(a,b\in\mathbb{R}\cup\{-\infty\}\cup\{\infty\}\)</span> such that <span class="math inline">\(a&lt;b\)</span>. Let <span class="math inline">\(f:[a,b]\rightarrow\mathbb{R}\)</span> be strictly increasing and continuous. Then <span class="math display">\[
 \alpha:=\lim\limits_{x\searrow a}\geq -\infty\\
 \beta:=\lim\limits_{x\nearrow b}\leq \infty\\
 \]</span> exist and <span class="math inline">\(f\)</span> is bijective.</p>
-<hr />
+<hr>
 <p><strong>Monotony.</strong> Let <span class="math inline">\(I\subset\mathbb{R}\)</span> be an interval and <span class="math inline">\(\widetilde{\Omega}\subset\mathbb{R}\)</span> a set. If <span class="math inline">\(f:I\rightarrow\widetilde{\Omega}\)</span> is continuous and bijective, then <span class="math inline">\(f\)</span> is strictly monotonic on <span class="math inline">\(I\)</span>.</p>
-<hr />
+<hr>
 
     </div>
 

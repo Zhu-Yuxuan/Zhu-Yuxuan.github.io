@@ -27,14 +27,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="A collection of theorems in Integral Calculus in one variable based on the third part of the course VV186 in UM-SJTU JI.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/12/26/Integral-Calculus/Integral-Calculus.assets/gamma.svg">
-<meta property="og:image" content="http://example.com/2020/12/26/Integral-Calculus/Integral-Calculus.assets/zeta.svg">
+<meta property="og:image" content="http://example.com/2020/12/26/Integral-Calculus/gamma.svg">
+<meta property="og:image" content="http://example.com/2020/12/26/Integral-Calculus/zeta.svg">
 <meta property="article:published_time" content="2020-12-26T11:05:36.000Z">
-<meta property="article:modified_time" content="2021-01-02T06:49:32.787Z">
+<meta property="article:modified_time" content="2021-01-02T07:53:48.681Z">
 <meta property="article:author" content="Yuxuan">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/12/26/Integral-Calculus/Integral-Calculus.assets/gamma.svg">
+<meta name="twitter:image" content="http://example.com/2020/12/26/Integral-Calculus/gamma.svg">
 
 <link rel="canonical" href="http://example.com/2020/12/26/Integral-Calculus/">
 
@@ -194,7 +194,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-02 14:49:32" itemprop="dateModified" datetime="2021-01-02T14:49:32+08:00">2021-01-02</time>
+                <time title="Modified: 2021-01-02 15:53:48" itemprop="dateModified" datetime="2021-01-02T15:53:48+08:00">2021-01-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -225,15 +225,15 @@ F:[a,b]\rightarrow\mathbb{C},\ \ \ \ \ F(x):=\int\limits_a^xf
 \]</span> Then <span class="math inline">\(F\)</span> is differentiable on <span class="math inline">\((a,b)\)</span> and <span class="math display">\[
 F&#39;(x)=f(x),\ \ \ \ x\in(a,b)
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Substitution Rule.</strong> Let <span class="math inline">\(f\in\text{Reg}([\alpha,\beta])\)</span> and <span class="math inline">\(g:[a,b]\rightarrow[\alpha,\beta]\)</span> continuously differentiable. Then <span class="math display">\[
 \int\limits_a^b(f\circ g)(x)g&#39;(x)dx=\int\limits_{g(a)}^{g(b)}f(y)dy
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Integration by Parts.</strong> Let <span class="math inline">\(f,g\in C^1([a,b],\mathbb{C})\)</span>. Then <span class="math display">\[
 \int\limits_a^bf&#39;(x)g(x)dx=f(x)g(x)|^b_a-\int\limits^b_af(x)g&#39;(x)dx
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Cauchy Property.</strong> Let <span class="math inline">\(I\subset\mathbb{R}\)</span> be an interval, <span class="math inline">\(a\in\bar{I}\subset(\mathbb{R}\ \cup \{-\infty,\infty\})\)</span> and <span class="math inline">\(F:I\rightarrow\mathbb{C}\)</span>. Then the following statements are equivalent:</p>
 <ol type="1">
 <li><p>The limits <span class="math inline">\(\lim\limits_{x\rightarrow a}F(x)\)</span> exists.</p></li>
@@ -243,19 +243,19 @@ F&#39;(x)=f(x),\ \ \ \ x\in(a,b)
 \underset{\varepsilon&gt;0}{\forall}\ \underset{R&gt;0 }{\exists}\ \underset{x,y \in I}{\forall}: \pm x, \pm y&gt;R \Rightarrow|F(x)-F(y)|&lt;\varepsilon
 \]</span> when <span class="math inline">\(a=\pm\infty\)</span></p></li>
 </ol>
-<hr />
+<hr>
 <p><strong>Cauchy Criterion.</strong> Let <span class="math inline">\(a\in\mathbb{R}\)</span> and <span class="math inline">\(f:[a,\infty)\rightarrow\mathbb{R}\)</span> be integrable on every interval <span class="math inline">\([a,x]\)</span>, <span class="math inline">\(x\in\mathbb{R}\)</span>. The improper integral <span class="math display">\[
 \int\limits_a^\infty f(x)dx
 \]</span> converges if and only if <span class="math display">\[
 \underset{\varepsilon&gt;0}{\forall}\ \underset{R&gt;0}{\exists}\ \underset{x,y&gt;R}{\forall}\ \left|\int_{x}^{y} f(t) d t\right|&lt;\varepsilon
 \]</span></p>
-<hr />
+<hr>
 <p><strong>The Dirichlet Integral.</strong> <span class="math display">\[
 \int\limits_0^\infty \frac{\sin x}{x}dx
 \]</span> is convergent.</p>
-<hr />
+<hr>
 <p><strong>Comparison Test.</strong> Let <span class="math inline">\(I\subset\mathbb{R}\)</span> and <span class="math inline">\(f:I\rightarrow\mathbb{C}\)</span>, <span class="math inline">\(g:I\rightarrow[0,\infty)\)</span>. Suppose that <span class="math inline">\(|f(t)|\leq g(t)\)</span> for all <span class="math inline">\(t\in I\)</span> and <span class="math inline">\(\int_Ig(t)dt\)</span> converges. Then <span class="math inline">\(\int_If(t)dt\)</span> also converges.</p>
-<hr />
+<hr>
 <p><strong>Euler Gamma Function.</strong> is defined through <span class="math display">\[
 \Gamma:\mathbb{R}_+\rightarrow\mathbb{R},\ \ \ \ \ \Gamma(t):=\int\limits_0^\infty z^{t-1}e^{-z}dz,\ \ \ t&gt;0
 \]</span> The gamma function plays an important role in many parts of mathematics, physics, and engineering.</p>
@@ -267,21 +267,19 @@ F&#39;(x)=f(x),\ \ \ \ x\in(a,b)
 \Gamma(t):=\frac{\Gamma(t+1)}{t},\ \ \ t\in(-n-1,-n),\ n\in\mathbb{N}
 \]</span></p></li>
 <li><p>The graph for extended gamma function is shown below.</p>
-<figure>
-<img src="Integral-Calculus.assets/gamma.svg" alt="" /><figcaption>gamma</figcaption>
-</figure></li>
+<p><img src="/2020/12/26/Integral-Calculus/gamma.svg"></p></li>
 </ol>
-<hr />
+<hr>
 <p><strong>Integral Test.</strong> Let <span class="math inline">\(m\in\mathbb{N}\)</span> and <span class="math inline">\(f:[m,\infty)\rightarrow[0,\infty)\)</span> be a decreasing function such that <span class="math inline">\(\int\limits_m^xf(x)\)</span> exists for all <span class="math inline">\(x&gt;m\)</span>. Then <span class="math display">\[
 \int\limits_m^\infty f(x)dx&lt;\infty\ \ \ \ \Leftrightarrow\ \ \ \ \sum\limits_{n=m}^\infty f(n)&lt;\infty
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Taylor's Theorem.</strong> Let <span class="math inline">\(I\in\mathbb{R}\)</span> be an open interval and <span class="math inline">\(f\in C^k(I)\)</span>. Let <span class="math inline">\(x\in I\)</span> and <span class="math inline">\(y\in\mathbb{R}\)</span> such that <span class="math inline">\(x+y\in I\)</span>. Then for all <span class="math inline">\(p\le k\)</span>, <span class="math display">\[
 f(x+y)=f(x)+\frac{1}{1!}f&#39;(x)y+\frac{1}{2!}f&#39;&#39;(x)y^2+\cdots+\frac{1}{(p-1)!}f^{(p-1)}(x)y^{p-1}+R_p
 \]</span> with the reminder term (Lagrange form) <span class="math display">\[
 R_p:=\int\limits_0^1\frac{(1-t)^{p-1}}{(p-1)!}f^{(p)}(x+ty)y^pdt
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Abel's Limit Theorem.</strong> Let <span class="math inline">\(f:[0,1)\rightarrow\mathbb{R}\)</span> be defined by <span class="math display">\[
 f(x)=\sum\limits_{k=0}^\infty a_kx^k
 \]</span> where <span class="math inline">\(\sum a_k\)</span> converges. Then <span class="math inline">\(\sum a_kx^k\)</span> converges uniformly on <span class="math inline">\([0,1]\)</span>, so <span class="math inline">\(f\in C([0,1])\)</span> and <span class="math display">\[
@@ -292,19 +290,17 @@ f(x)=\sum\limits_{k=0}^\infty a_kx^k
 \mathrm{A}-\sum_{n=0}^{\infty} (-1)^n = \frac{1}{2}\\
 \mathrm{A}-\sum_{n=0}^{\infty} n(-1)^{n+1} = \frac{1}{4}
 \]</span></p>
-<hr />
+<hr>
 <p><strong>Riemann Zeta Function.</strong> is defined as <span class="math display">\[
 \zeta(s)=\sum\limits_{n=1}^\infty \frac{1}{n^s}
 \]</span> This function will have more applications in more advanced topics. We omit them here.</p>
 <p>The graph of zeta function is shown below.</p>
-<figure>
-<img src="Integral-Calculus.assets/zeta.svg" alt="" /><figcaption>zeta</figcaption>
-</figure>
-<hr />
+<p><img src="/2020/12/26/Integral-Calculus/zeta.svg"></p>
+<hr>
 <p><strong>Stirling's Formula.</strong> As <span class="math inline">\(n\rightarrow\infty\)</span> <span class="math display">\[
 n ! \sim \sqrt{2 \pi n}\left(\frac{n}{e}\right)^{n}
 \]</span> This formula is a good elementary estimate to factorial.</p>
-<hr />
+<hr>
 
     </div>
 
